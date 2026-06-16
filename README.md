@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# servicios.cl — Prototipo inicial
 
-## Getting Started
+Marketplace de servicios para departamentos en Ñuñoa y Providencia, inspirado en una experiencia tipo Airbnb, pero con identidad propia.
 
-First, run the development server:
+## Qué incluye este prototipo
+
+- Home responsive para `servicios.cl`.
+- Buscador principal por servicio, comuna y fecha.
+- Categorías de servicios.
+- Tarjetas de profesionales con precio, comuna, rating y video.
+- Sección de funcionamiento: elegir, revisar video, reservar y pagar al llegar.
+- Bloque para captar profesionales.
+- Reglas de confianza: video obligatorio, agenda visible, precios definidos por cada profesional y reservas dentro de la plataforma.
+
+## Decisiones confirmadas
+
+- Comunas iniciales: Ñuñoa y Providencia.
+- Nombre temporal: servicios.cl.
+- Negocio independiente de Propiedades Castillo Asociados SpA.
+- Pago: cuando el profesional llega al domicilio.
+- Precios: definidos por cada profesional.
+
+## Ejecutar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Validar producción
 
-## Learn More
+```bash
+npm run lint
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Publicar en Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Opción recomendada para Tomás:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Crear una cuenta en https://vercel.com si aún no existe.
+2. Subir este proyecto a GitHub.
+3. En Vercel, presionar **Add New Project**.
+4. Importar el repositorio.
+5. Framework detectado: **Next.js**.
+6. Presionar **Deploy**.
 
-## Deploy on Vercel
+Opción por terminal:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm install -g vercel
+vercel login
+vercel
+vercel --prod
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Nota: para hacer el deploy real desde este computador, Tomás debe iniciar sesión en Vercel o entregar acceso al repositorio/cuenta correspondiente.
