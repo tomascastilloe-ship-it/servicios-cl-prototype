@@ -7,10 +7,11 @@ Marketplace de servicios para departamentos en Ñuñoa y Providencia, inspirado 
 - Home responsive para `servicios.cl`.
 - Buscador principal por servicio, comuna y fecha.
 - Categorías de servicios.
-- Tarjetas de profesionales con precio, comuna, rating y video.
-- Sección de funcionamiento: elegir, revisar video, reservar y pagar al llegar.
-- Bloque para captar profesionales.
-- Reglas de confianza: video obligatorio, agenda visible, precios definidos por cada profesional y reservas dentro de la plataforma.
+- Página `/servicios` con listado y filtros visuales.
+- Página `/servicios/[slug]` con ficha del profesional, video, precio, experiencia y calendario disponible.
+- Página `/reservar/[slug]` con ficha del cliente, calendario del cliente y simulación de chat interno.
+- Página `/profesionales` para explicar cómo postulan los prestadores.
+- Reglas de confianza: video obligatorio, agenda visible, precios definidos por cada profesional, reservas dentro de la plataforma y bloqueo de teléfonos antes del match.
 
 ## Decisiones confirmadas
 
@@ -19,6 +20,17 @@ Marketplace de servicios para departamentos en Ñuñoa y Providencia, inspirado 
 - Negocio independiente de Propiedades Castillo Asociados SpA.
 - Pago: cuando el profesional llega al domicilio.
 - Precios: definidos por cada profesional.
+- Antes de confirmar un match, la mensajería interna debe filtrar teléfonos, correos y datos de contacto externos.
+- El match ocurre cuando se confirma honorario y disponibilidad entre calendario del profesional y calendario del cliente.
+
+## Flujo de match y comunicación
+
+1. El cliente revisa el perfil del profesional y su calendario disponible.
+2. El cliente completa una ficha con nombre, comuna, referencia, horarios disponibles y detalle del servicio.
+3. El profesional revisa la solicitud, confirma honorario y propone/acepta horario.
+4. Antes del match, la plataforma bloquea teléfonos, correos, WhatsApp, Instagram y datos externos.
+5. Cuando ambas partes aceptan honorario y disponibilidad, queda el match confirmado.
+6. La comunicación de detalles finales sigue dentro del chat interno de servicios.cl.
 
 ## Ejecutar localmente
 

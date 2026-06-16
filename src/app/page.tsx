@@ -1,56 +1,7 @@
-const categories = [
-  "Electricidad",
-  "Gasfitería",
-  "Aseo profundo",
-  "Vidrios",
-  "Alfombras",
-  "Colchones",
-  "Autos",
-  "Mascotas",
-];
-
-const services = [
-  {
-    title: "Electricista certificado para departamentos",
-    provider: "Mario Fuentes",
-    commune: "Ñuñoa",
-    price: "$35.000",
-    rating: "4,96",
-    reviews: "128",
-    badge: "Video verificado",
-    gradient: "from-amber-200 via-orange-100 to-white",
-  },
-  {
-    title: "Limpieza premium de vidrios en altura baja",
-    provider: "Claudia Rojas",
-    commune: "Providencia",
-    price: "$28.000",
-    rating: "4,91",
-    reviews: "94",
-    badge: "Disponible hoy",
-    gradient: "from-sky-200 via-cyan-100 to-white",
-  },
-  {
-    title: "Aseo completo post arriendo o mudanza",
-    provider: "Equipo CasaLista",
-    commune: "Ñuñoa",
-    price: "$49.000",
-    rating: "4,88",
-    reviews: "211",
-    badge: "Más contratado",
-    gradient: "from-emerald-200 via-lime-100 to-white",
-  },
-  {
-    title: "Limpieza de colchones y tapices a domicilio",
-    provider: "Tapicería Limpia Pro",
-    commune: "Providencia",
-    price: "$32.000",
-    rating: "4,93",
-    reviews: "76",
-    badge: "Garantía 24h",
-    gradient: "from-violet-200 via-fuchsia-100 to-white",
-  },
-];
+import Link from "next/link";
+import { ServiceCard } from "@/components/ServiceCard";
+import { SiteHeader } from "@/components/SiteHeader";
+import { categories, services } from "@/lib/services";
 
 const steps = [
   "Elige servicio, comuna y horario disponible.",
@@ -61,29 +12,7 @@ const steps = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f7f7] text-neutral-950">
-      <header className="sticky top-0 z-30 border-b border-neutral-200/80 bg-white/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-          <a className="flex items-center gap-2" href="#inicio" aria-label="Ir al inicio">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#ff385c] text-lg font-black text-white shadow-sm">
-              s
-            </span>
-            <span className="text-xl font-black tracking-tight">servicios.cl</span>
-          </a>
-
-          <nav className="hidden items-center gap-8 text-sm font-semibold text-neutral-700 md:flex">
-            <a className="hover:text-neutral-950" href="#servicios">Servicios</a>
-            <a className="hover:text-neutral-950" href="#funciona">Cómo funciona</a>
-            <a className="hover:text-neutral-950" href="#profesionales">Soy profesional</a>
-          </nav>
-
-          <a
-            className="rounded-full border border-neutral-300 bg-white px-4 py-2 text-sm font-bold shadow-sm transition hover:shadow-md"
-            href="#profesionales"
-          >
-            Ofrecer servicio
-          </a>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section id="inicio" className="mx-auto max-w-7xl px-5 pb-12 pt-8 lg:px-8 lg:pb-16 lg:pt-12">
         <div className="overflow-hidden rounded-[2rem] bg-white shadow-[0_24px_80px_rgba(0,0,0,0.10)] ring-1 ring-neutral-200">
@@ -99,7 +28,7 @@ export default function Home() {
                 Encuentra maestros, aseo, limpieza de vidrios, colchones, autos y paseo de perros. Compara perfiles, revisa disponibilidad y reserva desde una sola plataforma.
               </p>
 
-              <div className="mt-8 rounded-full border border-neutral-200 bg-white p-2 shadow-xl shadow-neutral-200/70 lg:max-w-4xl">
+              <div className="mt-8 rounded-[2rem] border border-neutral-200 bg-white p-2 shadow-xl shadow-neutral-200/70 lg:rounded-full lg:max-w-4xl">
                 <div className="grid gap-2 md:grid-cols-[1.1fr_0.8fr_0.7fr_auto]">
                   <div className="rounded-full px-5 py-3 hover:bg-neutral-50">
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-neutral-500">Servicio</p>
@@ -113,12 +42,12 @@ export default function Home() {
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-neutral-500">Fecha</p>
                     <p className="mt-1 font-bold">Esta semana</p>
                   </div>
-                  <a
+                  <Link
                     className="flex items-center justify-center rounded-full bg-[#ff385c] px-8 py-4 text-base font-black text-white transition hover:bg-[#e31c5f]"
-                    href="#servicios"
+                    href="/servicios"
                   >
                     Buscar
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -164,13 +93,13 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-5 py-4 lg:px-8" aria-label="Categorías">
         <div className="flex gap-3 overflow-x-auto pb-3">
           {categories.map((category) => (
-            <a
+            <Link
               key={category}
               className="whitespace-nowrap rounded-full border border-neutral-200 bg-white px-5 py-3 text-sm font-bold text-neutral-700 shadow-sm transition hover:border-neutral-950 hover:text-neutral-950"
-              href="#servicios"
+              href="/servicios"
             >
               {category}
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -185,24 +114,8 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
-            <article key={service.title} className="group cursor-pointer overflow-hidden rounded-[1.7rem] bg-white shadow-sm ring-1 ring-neutral-200 transition hover:-translate-y-1 hover:shadow-xl">
-              <div className={`h-56 bg-gradient-to-br ${service.gradient} p-4`}>
-                <div className="flex h-full flex-col justify-between rounded-[1.2rem] bg-white/45 p-4 backdrop-blur-sm">
-                  <span className="w-fit rounded-full bg-white px-3 py-1 text-xs font-black text-neutral-800 shadow-sm">{service.badge}</span>
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-950 text-white shadow-lg transition group-hover:scale-110">▶</span>
-                </div>
-              </div>
-              <div className="p-5">
-                <div className="flex items-center justify-between gap-3">
-                  <p className="font-black">{service.commune}</p>
-                  <p className="text-sm font-bold">★ {service.rating}</p>
-                </div>
-                <h3 className="mt-2 line-clamp-2 min-h-12 font-bold leading-6">{service.title}</h3>
-                <p className="mt-2 text-sm text-neutral-600">{service.provider} · {service.reviews} reseñas</p>
-                <p className="mt-4 text-sm"><span className="text-lg font-black">{service.price}</span> desde</p>
-              </div>
-            </article>
+          {services.slice(0, 4).map((service) => (
+            <ServiceCard key={service.slug} service={service} />
           ))}
         </div>
       </section>
@@ -232,9 +145,9 @@ export default function Home() {
             <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Para profesionales</p>
             <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Muestra tu experiencia y recibe reservas.</h2>
             <p className="mt-5 text-lg leading-8 text-neutral-600">Sube un video de más de 1 minuto, define tus precios, marca si atiendes Ñuñoa, Providencia o ambas, y administra tu agenda desde el panel.</p>
-            <a className="mt-8 inline-flex rounded-full bg-neutral-950 px-6 py-4 font-black text-white transition hover:bg-neutral-800" href="mailto:hola@servicios.cl">
+            <Link className="mt-8 inline-flex rounded-full bg-neutral-950 px-6 py-4 font-black text-white transition hover:bg-neutral-800" href="/profesionales">
               Quiero ser profesional
-            </a>
+            </Link>
           </div>
           <div className="rounded-[2rem] bg-[#ff385c] p-8 text-white shadow-sm sm:p-10">
             <p className="text-sm font-black uppercase tracking-[0.2em] text-white/70">Reglas de confianza</p>
