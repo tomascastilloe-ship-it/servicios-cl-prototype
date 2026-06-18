@@ -11,6 +11,36 @@ const services = [
   "Reparaciones rápidas para entrega o publicación de propiedad",
 ];
 
+const jobExamples = [
+  {
+    title: "Electricidad menor",
+    examples: ["Cambio de enchufes", "Interruptores", "Lámparas", "Revisión de tablero", "Cortocircuitos simples", "Timbres y citófonos"],
+  },
+  {
+    title: "Gasfitería / baños",
+    examples: ["Filtraciones", "Llaves que gotean", "Sifones", "WC corriendo", "Duchas", "Lavamanos y lavaplatos"],
+  },
+  {
+    title: "Instalaciones",
+    examples: ["Repisas", "Cortinas", "Soportes TV", "Espejos", "Cuadros", "Accesorios de baño"],
+  },
+  {
+    title: "Mantención general",
+    examples: ["Puertas", "Bisagras", "Muebles", "Sellos", "Pintura menor", "Preparar depto para arriendo/venta"],
+  },
+];
+
+const videoSteps = [
+  "Graba con tu celular en vertical, con buena luz y sin ruido.",
+  "Mira a la cámara y habla simple, como si le explicaras a un vecino.",
+  "Primeros 10 segundos: di tu nombre, apellido, comuna y oficio.",
+  "Cuenta hace cuántos años trabajas en esto.",
+  "Explica qué trabajos haces con ejemplos concretos: enchufes, filtraciones, repisas, pintura, etc.",
+  "Di si tienes certificados, cursos, herramientas o experiencia en edificios/departamentos.",
+  "Cierra diciendo tus comunas, disponibilidad y que trabajas por servicios.cl.",
+  "Envíanos el video por WhatsApp. No tiene que ser perfecto; tiene que ser claro y honesto.",
+];
+
 const availability = [
   { day: "Lunes", blocks: ["09:00–13:00", "15:00–18:00"] },
   { day: "Martes", blocks: ["10:00–14:00"] },
@@ -116,6 +146,50 @@ export default function PilotProfessionalPage() {
                     <span>{item}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Especialidades con ejemplos</p>
+              <h2 className="mt-2 text-3xl font-black tracking-tight">Que el maestro diga exactamente qué trabajos hace</h2>
+              <p className="mt-3 leading-7 text-neutral-600">
+                La ficha debe ayudar a personas que no saben venderse bien. Por eso mostramos ejemplos simples, tipo “globitos”, para que el prestador elija o copie los trabajos que realmente realiza.
+              </p>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {jobExamples.map((group) => (
+                  <div key={group.title} className="rounded-3xl border border-neutral-200 p-5">
+                    <h3 className="text-xl font-black">{group.title}</h3>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {group.examples.map((example) => (
+                        <span key={example} className="rounded-full bg-rose-50 px-4 py-2 text-sm font-black text-[#d70466] ring-1 ring-rose-100">
+                          {example}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Video por WhatsApp</p>
+              <h2 className="mt-2 text-3xl font-black tracking-tight">Guía simple para grabar el video con celular</h2>
+              <p className="mt-3 leading-7 text-neutral-600">
+                El maestro no necesita cámara profesional. Puede grabarse con su celular y enviar el video por WhatsApp. La idea es que hable claro, muestre confianza y explique qué sabe hacer.
+              </p>
+              <div className="mt-6 grid gap-3 md:grid-cols-2">
+                {videoSteps.map((step, index) => (
+                  <div key={step} className="flex gap-3 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 text-sm font-bold text-neutral-700">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-950 text-xs font-black text-white">{index + 1}</span>
+                    <span>{step}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 rounded-3xl bg-neutral-950 p-5 text-white">
+                <p className="font-black">Mensaje tipo para enviarle al maestro por WhatsApp</p>
+                <p className="mt-3 text-sm leading-7 text-white/75">
+                  “Hola, graba un video vertical de mínimo 1 minuto. Parte diciendo tu nombre, oficio, comuna y años de experiencia. Después cuenta con ejemplos qué trabajos haces: enchufes, filtraciones, repisas, pintura, baños, etc. Si tienes certificados o experiencia en edificios, menciónalo. No tiene que quedar perfecto; solo claro, honesto y con buena luz.”
+                </p>
               </div>
             </div>
 

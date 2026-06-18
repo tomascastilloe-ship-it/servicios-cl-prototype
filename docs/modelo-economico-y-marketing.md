@@ -80,6 +80,9 @@ Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual
 
 - Servicio confiable para departamentos.
 - Profesionales con video de presentación.
+- El video puede grabarse con celular y enviarse por WhatsApp.
+- El video debe ser explicado de forma simple: nombre, oficio, comuna, años de experiencia, certificados si tiene y ejemplos concretos de trabajos.
+- En las fichas, usar ejemplos tipo “globitos” para que el prestador pueda explicar exactamente qué hace: enchufes, tableros, lámparas, filtraciones, baños, goteras, repisas, cortinas, puertas, pintura menor, etc.
 - Agenda y disponibilidad clara.
 - Pago seguro dentro de la plataforma.
 - Sin pagos por fuera.

@@ -62,11 +62,29 @@ const pilotChecklist = [
 ];
 
 const videoScript = [
-  "Hola, soy [nombre] y trabajo en [servicios principales].",
-  "Tengo [años] de experiencia haciendo trabajos en casas y departamentos.",
-  "Puedo ayudar en [3 ejemplos concretos de trabajos].",
+  "Primeros 10 segundos: Hola, soy [nombre y apellido], vivo/trabajo en [comuna] y soy [oficio].",
+  "Tengo [años] de experiencia haciendo trabajos en casas, departamentos o edificios.",
+  "Hago trabajos como: cambiar enchufes, revisar luces, reparar filtraciones, instalar repisas, pintar detalles o arreglar muebles.",
+  "Si tengo certificados, cursos o experiencia especial, lo digo de forma simple.",
   "Trabajo principalmente en [comunas] y mi disponibilidad habitual es [días/horarios].",
-  "Mi forma de trabajo es clara: reviso el problema, explico el valor y coordino por la plataforma.",
+  "Cierro diciendo: trabajo con servicios.cl, coordino por la plataforma y me gusta dejar claro el valor antes de comenzar.",
+];
+
+const concreteExamples = [
+  "Cambio de enchufes",
+  "Revisión de tablero",
+  "Instalación de lámparas",
+  "Filtraciones de baño",
+  "Llave que gotea",
+  "WC corriendo",
+  "Instalar repisas",
+  "Soporte de TV",
+  "Cortinas",
+  "Arreglo de puertas",
+  "Bisagras",
+  "Pintura menor",
+  "Sellos de tina/ducha",
+  "Preparar depto para arriendo",
 ];
 
 function FieldLabel({ children }: { children: React.ReactNode }) {
@@ -205,6 +223,23 @@ export default function ProfessionalApplicationPage() {
                     </label>
                   ))}
                 </div>
+                <div className="mt-6 rounded-[1.7rem] bg-neutral-50 p-5 ring-1 ring-neutral-200">
+                  <p className="font-black">Ejemplos para ayudar al maestro a explicar lo que hace</p>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">
+                    Estos globitos sirven para que la persona no tenga que inventar una descripción complicada. Puede elegir los que correspondan y después escribir otros.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {concreteExamples.map((example) => (
+                      <span key={example} className="rounded-full bg-white px-4 py-2 text-sm font-black text-neutral-700 ring-1 ring-neutral-200">
+                        {example}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-5 space-y-2">
+                    <FieldLabel>Detalle exacto de trabajos que realiza</FieldLabel>
+                    <textarea className="min-h-28 w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: cambio enchufes, reviso luces, instalo lámparas, arreglo filtraciones simples, cambio sifones, instalo repisas, reparo puertas, hago pintura menor." />
+                  </div>
+                </div>
               </section>
 
               <section>
@@ -303,7 +338,7 @@ export default function ProfessionalApplicationPage() {
                   <div className="rounded-[1.4rem] border border-dashed border-neutral-300 bg-neutral-50 p-6">
                     <p className="font-black">Video de presentación obligatorio</p>
                     <p className="mt-2 text-sm leading-6 text-neutral-600">
-                      Debe durar más de 1 minuto. Debe decir quién es, qué servicios realiza, experiencia, comunas y forma de trabajo.
+                      Debe durar más de 1 minuto. Puede grabarse con celular, en vertical, y enviarse por WhatsApp. No buscamos un video perfecto: buscamos que el cliente entienda quién es, qué hace y por qué puede confiar.
                     </p>
                     <div className="mt-4 rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
                       <p className="text-sm font-black text-neutral-800">Guion sugerido</p>
@@ -313,9 +348,14 @@ export default function ProfessionalApplicationPage() {
                         ))}
                       </ul>
                     </div>
-                    <button type="button" className="mt-5 rounded-full bg-neutral-950 px-5 py-3 text-sm font-black text-white">
-                      Subir video
-                    </button>
+                    <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                      <button type="button" className="rounded-full bg-neutral-950 px-5 py-3 text-sm font-black text-white">
+                        Subir video
+                      </button>
+                      <button type="button" className="rounded-full border border-neutral-300 bg-white px-5 py-3 text-sm font-black text-neutral-900">
+                        Enviar video por WhatsApp
+                      </button>
+                    </div>
                   </div>
                   <div className="rounded-[1.4rem] border border-dashed border-neutral-300 bg-neutral-50 p-6">
                     <p className="font-black">Documentos sugeridos</p>
