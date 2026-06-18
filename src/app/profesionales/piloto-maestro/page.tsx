@@ -237,6 +237,28 @@ export default function PilotProfessionalPage() {
               </div>
             </div>
 
+            <div className="rounded-[2rem] bg-neutral-950 p-6 text-white shadow-xl sm:p-8">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-rose-200">Chat interno protegido</p>
+              <h2 className="mt-2 text-3xl font-black tracking-tight">El cliente no puede pedir el teléfono del maestro antes del match.</h2>
+              <p className="mt-3 leading-7 text-white/70">
+                Todas las preguntas sobre trabajos, precios, horarios y experiencia se hacen dentro del chat de servicios.cl. Si el cliente o el maestro intenta enviar teléfono, WhatsApp, correo o datos para cerrar por fuera, el mensaje se bloquea y aparece una tarjeta amarilla. Si insiste, la cuenta puede ser suspendida o expulsada.
+              </p>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                <div className="rounded-[1.4rem] bg-white/10 p-5 ring-1 ring-white/10">
+                  <h3 className="font-black">Mensaje escrito</h3>
+                  <p className="mt-2 text-sm leading-6 text-white/65">Se revisa antes de enviarse. Si trae teléfono o datos externos, no llega al otro usuario.</p>
+                </div>
+                <div className="rounded-[1.4rem] bg-white/10 p-5 ring-1 ring-white/10">
+                  <h3 className="font-black">Mensaje de voz</h3>
+                  <p className="mt-2 text-sm leading-6 text-white/65">El audio se transforma a texto y ese texto pasa por el mismo filtro anti-contacto.</p>
+                </div>
+                <div className="rounded-[1.4rem] bg-amber-300 p-5 text-neutral-950">
+                  <h3 className="font-black">Tarjeta amarilla</h3>
+                  <p className="mt-2 text-sm leading-6">Warning inmediato: “No está permitido cerrar por fuera. Todo debe hacerse por la plataforma”.</p>
+                </div>
+              </div>
+            </div>
+
             <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
               <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Modelo económico</p>
               <h2 className="mt-2 text-3xl font-black tracking-tight">Autorización, doble confirmación y cobro</h2>

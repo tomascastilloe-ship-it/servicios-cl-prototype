@@ -7,8 +7,12 @@ const flow = [
     text: "El cliente revisa profesionales, video, precio, comuna y disponibilidad desde web o app.",
   },
   {
+    title: "Chat protegido",
+    text: "Antes del match, cliente y maestro solo conversan por mensajería interna; teléfonos y datos externos se bloquean.",
+  },
+  {
     title: "Solicitar match",
-    text: "Cliente y prestador acuerdan horario dentro de la plataforma, sin compartir datos externos.",
+    text: "Cliente y prestador acuerdan horario dentro de la plataforma, con tarjeta autorizada y reglas claras.",
   },
   {
     title: "Confirmar llegada",
@@ -22,6 +26,13 @@ const flow = [
     title: "Pago al prestador",
     text: "El maestro recibe transferencia bancaria 24 a 48 horas después de realizado el trabajo.",
   },
+];
+
+const moderationRules = [
+  "No se pueden enviar teléfonos, WhatsApp, correos, Instagram, direcciones externas ni datos para cerrar por fuera antes del match.",
+  "Si el sistema detecta un número o dato externo, el mensaje no se envía y aparece una tarjeta amarilla/warning.",
+  "Si el usuario insiste, el caso pasa a revisión y puede ser suspendido o expulsado de la plataforma.",
+  "Si la persona no quiere escribir, puede enviar audio; la app lo convierte a texto y revisa el texto antes de publicarlo en el chat.",
 ];
 
 export default function AppPrototypePage() {
@@ -62,6 +73,15 @@ export default function AppPrototypePage() {
                   <p className="mt-1 text-sm text-neutral-600">Ñuñoa · Hoy 15:00</p>
                 </div>
                 <div className="rounded-3xl border border-neutral-200 p-4">
+                  <p className="font-black">Chat antes del match</p>
+                  <div className="mt-4 space-y-3 text-sm font-bold text-neutral-700">
+                    <p className="rounded-2xl bg-neutral-100 p-3">Cliente: ¿Puedes revisar si haces enchufes y lámparas?</p>
+                    <p className="rounded-2xl bg-neutral-950 p-3 text-white">Maestro: Sí, hago enchufes, interruptores y lámparas.</p>
+                    <p className="rounded-2xl bg-amber-100 p-3 text-amber-950">⚠️ Tarjeta amarilla: no se permite pedir ni enviar teléfonos antes del match.</p>
+                    <p className="rounded-2xl bg-rose-50 p-3 text-[#d70466]">🎙️ Audio recibido → convertido a texto antes de enviarse.</p>
+                  </div>
+                </div>
+                <div className="rounded-3xl border border-neutral-200 p-4">
                   <p className="font-black">Estado del servicio</p>
                   <div className="mt-4 space-y-3 text-sm font-bold text-neutral-700">
                     <p>✓ Match confirmado</p>
@@ -85,12 +105,27 @@ export default function AppPrototypePage() {
         <section className="mt-12 rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
           <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Flujo operacional</p>
           <h2 className="mt-2 text-3xl font-black tracking-tight">Mismo proceso para web y app</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-5">
+          <div className="mt-6 grid gap-4 md:grid-cols-6">
             {flow.map((item, index) => (
               <div key={item.title} className="rounded-2xl border border-neutral-200 p-4">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-950 text-sm font-black text-white">{index + 1}</span>
                 <h3 className="mt-4 font-black">{item.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-neutral-600">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-[2rem] bg-neutral-950 p-6 text-white shadow-xl sm:p-8">
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-rose-200">Reglas del chat interno</p>
+          <h2 className="mt-2 text-3xl font-black tracking-tight">Todo se conversa dentro de servicios.cl.</h2>
+          <p className="mt-3 max-w-4xl leading-7 text-white/70">
+            Igual que en plataformas tipo Airbnb, la comunicación previa debe quedar dentro de la app/web. El sistema revisa mensajes escritos y audios transcritos para evitar teléfonos, WhatsApp, correos o intentos de cerrar por fuera.
+          </p>
+          <div className="mt-6 grid gap-4 md:grid-cols-4">
+            {moderationRules.map((rule) => (
+              <div key={rule} className="rounded-2xl bg-white/10 p-4 text-sm font-bold leading-6 text-white/75 ring-1 ring-white/10">
+                {rule}
               </div>
             ))}
           </div>

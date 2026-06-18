@@ -91,19 +91,19 @@ export default async function ServiceDetailPage({
                   <div className="flex flex-col justify-between gap-4 md:flex-row md:items-start">
                     <div>
                       <p className="text-sm font-black uppercase tracking-[0.18em] text-rose-300">
-                        Pago protegido + comunicación interna
+                        Chat interno protegido + pago seguro
                       </p>
-                      <h3 className="mt-2 text-2xl font-black">El cliente paga con tarjeta cuando el profesional llega.</h3>
+                      <h3 className="mt-2 text-2xl font-black">Antes del match no se comparten teléfonos.</h3>
                       <p className="mt-3 max-w-3xl leading-7 text-white/70">
-                        La reserva se coordina dentro de servicios.cl. El pago se realiza solo con tarjeta cuando el profesional confirma que llegó a la propiedad en el horario acordado. La plataforma mantiene el control de la operación y paga al profesional por transferencia 24 a 48 horas después de realizado el trabajo.
+                        Como en plataformas tipo Airbnb, cliente y profesional conversan solo dentro de servicios.cl. Si alguien intenta enviar teléfono, WhatsApp, correo o cerrar por fuera, el mensaje se bloquea y aparece una tarjeta amarilla. La reserva y el pago se mantienen dentro de la plataforma.
                       </p>
                     </div>
                     <span className="rounded-full bg-white/10 px-5 py-3 text-sm font-black ring-1 ring-white/15">
-                      Sin efectivo · sin pago externo
+                      Chat interno · warning anti-contacto
                     </span>
                   </div>
                   <div className="mt-6 grid gap-3 md:grid-cols-3">
-                    {["1. Reserva y match interno", "2. Profesional confirma llegada", "3. Pago con tarjeta y transferencia 24–48h"].map((step) => (
+                    {["1. Preguntas por chat o audio transcrito", "2. Bloqueo de teléfonos/datos externos", "3. Match + tarjeta + doble confirmación"].map((step) => (
                       <div key={step} className="rounded-2xl bg-white/10 p-4 text-sm font-bold text-white/80 ring-1 ring-white/10">{step}</div>
                     ))}
                   </div>

@@ -80,7 +80,10 @@ export default async function BookingPage({
                 placeholder="Describe el problema o servicio. Ej: necesito revisar enchufes del living y cambiar una luminaria. No escribas teléfono ni correo; el sistema los bloqueará antes del match."
               />
               <div className="mt-4 rounded-2xl bg-amber-50 p-4 text-sm leading-6 text-amber-900">
-                <strong>Filtro activo:</strong> antes del match no se permiten teléfonos, correos, WhatsApp, Instagram ni direcciones exactas. Si el mensaje trae datos de contacto, queda pendiente de revisión.
+                <strong>Filtro activo:</strong> antes del match no se permiten teléfonos, correos, WhatsApp, Instagram ni datos para cerrar por fuera. Si el mensaje trae datos de contacto, no se envía y aparece una tarjeta amarilla.
+              </div>
+              <div className="mt-3 rounded-2xl bg-neutral-100 p-4 text-sm leading-6 text-neutral-700">
+                <strong>Mensaje de voz:</strong> si no quieres escribir, puedes grabar un audio. La app lo convierte a texto, revisa que no tenga teléfonos/datos externos y recién ahí lo publica en el chat.
               </div>
             </div>
 
@@ -119,7 +122,10 @@ export default async function BookingPage({
                   Profesional: Puedo mañana 09:30. El valor estimado parte en {service.price}.
                 </div>
                 <div className="rounded-2xl bg-amber-400/15 p-3 text-amber-100 ring-1 ring-amber-300/20">
-                  Sistema: Mensajes con teléfono o datos externos serán bloqueados hasta confirmar el match.
+                  Sistema: ⚠️ Tarjeta amarilla. No se permite pedir ni enviar teléfonos, WhatsApp, correos o datos para cerrar por fuera antes del match. Escribe tus dudas aquí o envía audio; lo convertiremos a texto.
+                </div>
+                <div className="rounded-2xl bg-red-500/15 p-3 text-red-100 ring-1 ring-red-300/20">
+                  Reincidencia: si el usuario insiste en sacar el negocio de la plataforma, la cuenta puede quedar suspendida o expulsada.
                 </div>
               </div>
             </div>

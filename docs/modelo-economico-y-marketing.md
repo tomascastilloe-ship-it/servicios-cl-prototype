@@ -43,20 +43,32 @@ Mercado Pago tiene Checkout Pro, Checkout API, webhooks, reembolsos/cancelacione
 
 Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual, pero se debe validar disponibilidad, cuenta local, payouts y compatibilidad comercial/tributaria para Chile antes de elegirlo como base principal.
 
+## Regla de comunicación interna tipo Airbnb
+
+- Antes del match, la única forma de comunicación entre cliente y prestador es el chat interno de servicios.cl.
+- El usuario puede hacer preguntas sobre trabajos, disponibilidad, precio estimado y experiencia del maestro, pero no puede pedir ni enviar datos de contacto.
+- Se deben bloquear automáticamente teléfonos, WhatsApp, correos, Instagram, direcciones externas o cualquier intento de cerrar el negocio por fuera.
+- Si se detecta un dato prohibido, el mensaje no se envía y aparece una “tarjeta amarilla” o warning:
+  - “No está permitido compartir teléfonos o cerrar por fuera. Todo debe coordinarse y pagarse dentro de servicios.cl.”
+- Si el usuario insiste, queda registro del intento, se escala a revisión interna y puede suspenderse o expulsarse de la plataforma.
+- Los mensajes de voz son permitidos, pero deben transformarse a texto antes de llegar al chat. Ese texto pasa por el mismo filtro anti-contacto.
+- Esta regla aplica a clientes y prestadores, especialmente para evitar que clientes intenten evitar el pago con tarjeta.
+
 ## Flujo operativo tipo Airbnb para servicios.cl
 
 1. Cliente revisa servicios y profesionales.
 2. Cliente revisa video, precio, reseñas y disponibilidad.
-3. Cliente solicita match/reserva.
-4. Plataforma registra tarjeta de forma segura mediante pasarela externa certificada; servicios.cl no almacena números de tarjeta.
-5. Prestador acepta horario y valor estimado.
-6. Al llegar a la propiedad, la app/WhatsApp envía confirmación automática:
+3. Cliente consulta dudas por chat interno o audio transcrito, sin compartir teléfonos ni datos externos.
+4. Cliente solicita match/reserva.
+5. Plataforma registra tarjeta de forma segura mediante pasarela externa certificada; servicios.cl no almacena números de tarjeta.
+6. Prestador acepta horario y valor estimado.
+7. Al llegar a la propiedad, la app/WhatsApp envía confirmación automática:
    - Al maestro: “¿Ya llegaste a la propiedad?”
    - Al cliente: “¿El maestro ya se presentó?”
-7. Si ambos responden “sí”, se captura/cobra la tarjeta.
-8. Si hay desacuerdo, queda en revisión manual/soporte.
-9. La visita se cobra por presentación/visita, independiente de si luego se aprueba o no un trabajo adicional.
-10. El prestador recibe transferencia bancaria 24–48 horas después.
+8. Si ambos responden “sí”, se captura/cobra la tarjeta.
+9. Si hay desacuerdo, queda en revisión manual/soporte.
+10. La visita se cobra por presentación/visita, independiente de si luego se aprueba o no un trabajo adicional.
+11. El prestador recibe transferencia bancaria 24–48 horas después.
 
 ## Pendientes contables/legales a resolver
 
