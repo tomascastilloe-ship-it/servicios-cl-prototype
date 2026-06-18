@@ -30,6 +30,9 @@ export default function ProfessionalsPage() {
               <Link href="/profesionales/postular" className="inline-flex rounded-full bg-[#ff385c] px-6 py-4 font-black text-white transition hover:bg-[#e31c5f]">
                 Completar ficha profesional
               </Link>
+              <Link href="/profesionales/piloto-maestro" className="inline-flex rounded-full bg-neutral-950 px-6 py-4 font-black text-white transition hover:bg-neutral-800">
+                Ver ficha piloto
+              </Link>
               <Link href="/servicios" className="inline-flex rounded-full border border-neutral-300 px-6 py-4 font-black text-neutral-900 transition hover:border-neutral-950">
                 Ver cómo se ve un perfil
               </Link>
