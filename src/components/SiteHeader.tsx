@@ -25,7 +25,7 @@ export function SiteHeader() {
 
         <Link
           className="rounded-full border border-neutral-300 bg-white px-4 py-2 text-sm font-bold shadow-sm transition hover:shadow-md"
-          href="/profesionales"
+          href="/profesionales/postular"
         >
           Ofrecer servicio
         </Link>

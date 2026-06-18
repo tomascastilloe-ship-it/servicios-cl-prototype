@@ -26,9 +26,14 @@ export default function ProfessionalsPage() {
             <p className="mt-5 max-w-3xl text-lg leading-8 text-neutral-600">
               En servicios.cl cada profesional publica sus precios, disponibilidad y video de presentación. El cliente envía una ficha, se confirma honorario y horario, y recién ahí se genera el match.
             </p>
-            <Link href="/servicios" className="mt-8 inline-flex rounded-full bg-[#ff385c] px-6 py-4 font-black text-white transition hover:bg-[#e31c5f]">
-              Ver cómo se ve un perfil
-            </Link>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link href="/profesionales/postular" className="inline-flex rounded-full bg-[#ff385c] px-6 py-4 font-black text-white transition hover:bg-[#e31c5f]">
+                Completar ficha profesional
+              </Link>
+              <Link href="/servicios" className="inline-flex rounded-full border border-neutral-300 px-6 py-4 font-black text-neutral-900 transition hover:border-neutral-950">
+                Ver cómo se ve un perfil
+              </Link>
+            </div>
           </div>
 
           <div className="rounded-[2rem] bg-neutral-950 p-6 text-white shadow-xl sm:p-8">
@@ -92,9 +97,9 @@ export default function ProfessionalsPage() {
               <p className="mt-3 leading-7 text-neutral-700">
                 En la siguiente versión este bloque será un formulario real para postular como profesional, subir video, definir precios y configurar calendario.
               </p>
-              <button className="mt-6 rounded-full bg-neutral-950 px-6 py-4 font-black text-white">
+              <Link href="/profesionales/postular" className="mt-6 inline-flex rounded-full bg-neutral-950 px-6 py-4 font-black text-white">
                 Postular como profesional
-              </button>
+              </Link>
             </div>
           </div>
         </section>
