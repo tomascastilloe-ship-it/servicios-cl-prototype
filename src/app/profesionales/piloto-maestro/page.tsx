@@ -165,24 +165,32 @@ export default function PilotProfessionalPage() {
 
             <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
               <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Modelo económico</p>
-              <h2 className="mt-2 text-3xl font-black tracking-tight">Cómo se cobra y cómo se paga</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-3">
+              <h2 className="mt-2 text-3xl font-black tracking-tight">Autorización, doble confirmación y cobro</h2>
+              <div className="mt-6 grid gap-4 md:grid-cols-4">
                 <div className="rounded-2xl border border-neutral-200 p-5">
                   <p className="text-2xl font-black">1</p>
-                  <h3 className="mt-3 font-black">Cliente usa tarjeta</h3>
-                  <p className="mt-2 text-sm leading-6 text-neutral-600">La única forma de contratar dentro de la plataforma será con tarjeta de crédito o débito.</p>
+                  <h3 className="mt-3 font-black">Tarjeta autorizada</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">Al reservar, el cliente deja su tarjeta como medio de pago seguro dentro de la plataforma.</p>
                 </div>
                 <div className="rounded-2xl border border-neutral-200 p-5">
                   <p className="text-2xl font-black">2</p>
-                  <h3 className="mt-3 font-black">Cobro al llegar</h3>
-                  <p className="mt-2 text-sm leading-6 text-neutral-600">El cobro se activa cuando el maestro confirma que llegó a la propiedad en el horario establecido.</p>
+                  <h3 className="mt-3 font-black">Doble “sí”</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">Al llegar, app/WhatsApp pregunta al maestro y al cliente si el profesional se presentó.</p>
                 </div>
                 <div className="rounded-2xl border border-neutral-200 p-5">
                   <p className="text-2xl font-black">3</p>
+                  <h3 className="mt-3 font-black">Captura del pago</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">Con ambas confirmaciones, se cobra la tarjeta por la visita o servicio pactado.</p>
+                </div>
+                <div className="rounded-2xl border border-neutral-200 p-5">
+                  <p className="text-2xl font-black">4</p>
                   <h3 className="mt-3 font-black">Transferencia 24–48h</h3>
-                  <p className="mt-2 text-sm leading-6 text-neutral-600">El prestador recibe su pago por transferencia bancaria después de realizado el trabajo, por orden contable.</p>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">El prestador recibe transferencia bancaria después del trabajo, por orden contable.</p>
                 </div>
               </div>
+              <Link href="/app" className="mt-6 inline-flex rounded-full bg-neutral-950 px-6 py-4 font-black text-white transition hover:bg-neutral-800">
+                Ver vista app conectada
+              </Link>
             </div>
 
             <div className="rounded-[2rem] bg-amber-50 p-6 text-amber-950 ring-1 ring-amber-200 sm:p-8">

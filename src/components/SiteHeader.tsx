@@ -21,6 +21,9 @@ export function SiteHeader() {
           <Link className="hover:text-neutral-950" href="/profesionales">
             Soy profesional
           </Link>
+          <Link className="hover:text-neutral-950" href="/app">
+            App piloto
+          </Link>
         </nav>
 
         <Link

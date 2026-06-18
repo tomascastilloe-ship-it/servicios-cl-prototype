@@ -39,7 +39,7 @@ export default async function BookingPage({
               Cuéntale al profesional qué necesitas.
             </h1>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-neutral-600">
-              Esta ficha permite coordinar disponibilidad, honorarios y pago sin compartir teléfonos antes de confirmar el match. El cliente paga solo con tarjeta dentro de servicios.cl cuando el profesional confirma su llegada a la propiedad.
+              Esta ficha permite coordinar disponibilidad, honorarios y pago sin compartir teléfonos antes de confirmar el match. El cliente deja su tarjeta autorizada de forma segura; el cobro se captura cuando cliente y profesional confirman la llegada a la propiedad.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -88,9 +88,9 @@ export default async function BookingPage({
               <p className="text-sm font-black uppercase tracking-[0.18em] text-rose-300">Pago seguro de la reserva</p>
               <h2 className="mt-2 text-2xl font-black">No se paga en efectivo ni por fuera.</h2>
               <div className="mt-4 grid gap-3 text-sm leading-6 text-white/75 md:grid-cols-3">
-                <p><strong className="text-white">1.</strong> La tarjeta queda como medio de pago de la plataforma.</p>
-                <p><strong className="text-white">2.</strong> El cobro se efectúa cuando el profesional confirma llegada al domicilio y horario acordado.</p>
-                <p><strong className="text-white">3.</strong> El profesional recibe transferencia bancaria 24–48 horas después de realizado el trabajo.</p>
+                <p><strong className="text-white">1.</strong> La tarjeta queda autorizada como medio de pago de la plataforma.</p>
+                <p><strong className="text-white">2.</strong> App/WhatsApp pide doble confirmación: maestro llegó + cliente confirma presentación.</p>
+                <p><strong className="text-white">3.</strong> Con ambos “sí”, se captura el cobro y luego el profesional recibe transferencia 24–48 horas después.</p>
               </div>
             </div>
 
