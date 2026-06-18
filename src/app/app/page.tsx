@@ -56,6 +56,9 @@ export default function AppPrototypePage() {
               <Link href="/reservar/electricista-mario-fuentes" className="rounded-full border border-neutral-300 bg-white px-6 py-4 text-center font-black transition hover:border-neutral-950">
                 Ver reserva cliente
               </Link>
+              <Link href="https://www.corredoradepropiedadescastillo.cl" target="_blank" className="rounded-full bg-white px-6 py-4 text-center font-black text-neutral-950 shadow-sm ring-1 ring-neutral-200 transition hover:shadow-md">
+                Corredora Castillo
+              </Link>
             </div>
           </div>
 

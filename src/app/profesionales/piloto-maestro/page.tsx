@@ -116,7 +116,12 @@ export default function PilotProfessionalPage() {
               <div className="relative flex min-h-[310px] flex-col justify-between">
                 <div className="flex items-start justify-between gap-4">
                   <span className="rounded-full bg-white/15 px-4 py-2 text-sm font-black backdrop-blur">Piloto v1</span>
-                  <span className="rounded-full bg-amber-300 px-4 py-2 text-sm font-black text-neutral-950">Pendiente video</span>
+                  <div className="flex flex-wrap justify-end gap-2">
+                    <Link href="https://www.corredoradepropiedadescastillo.cl" target="_blank" className="rounded-full bg-white px-4 py-2 text-sm font-black text-neutral-950 shadow-sm">
+                      Corredora Castillo
+                    </Link>
+                    <span className="rounded-full bg-amber-300 px-4 py-2 text-sm font-black text-neutral-950">Pendiente video</span>
+                  </div>
                 </div>
 
                 <div className="rounded-[1.6rem] bg-white p-5 text-neutral-950 shadow-2xl">

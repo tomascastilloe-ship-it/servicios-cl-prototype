@@ -88,6 +88,32 @@ Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual
 
 “Recibe solicitudes ordenadas, agenda tus horarios y trabaja con pagos gestionados por la plataforma. El cliente paga dentro de servicios.cl y tú recibes transferencia bancaria 24 a 48 horas después de realizar el trabajo.”
 
+## Regla de chat y comunicación tipo Airbnb
+
+- Antes del match/pago, cliente y maestro solo pueden comunicarse por el chat interno de servicios.cl.
+- No se permite compartir teléfonos, WhatsApp, correos, Instagram ni datos para cerrar por fuera.
+- Si el sistema detecta un teléfono, correo o intento de contacto externo, el mensaje se bloquea y no llega al otro usuario.
+- El usuario recibe una “tarjeta amarilla” o warning claro: “No está permitido cerrar por fuera. Todo debe hacerse por la plataforma”.
+- Si insiste, la cuenta puede pasar a revisión, suspensión o expulsión.
+- Los mensajes de voz deben convertirse a texto antes de entregarse al otro usuario, para aplicar el mismo filtro anti-contacto.
+- Las dudas sobre trabajos, precios, experiencia o materiales deben resolverse dentro del chat, por texto o por audio transcrito.
+
+## Evaluaciones posteriores
+
+### Cliente evalúa al maestro
+
+- Puntualidad en la visita.
+- Calidad del trabajo o diagnóstico.
+- Orden y limpieza del lugar donde trabajó.
+- Cordialidad y capacidad humana para comunicarse.
+
+### Maestro evalúa al cliente
+
+- Comunicación clara con el maestro.
+- Entregó acceso e información necesaria para trabajar.
+- Fue razonable con horarios y condiciones.
+- Permitió trabajar de forma segura y ordenada.
+
 ## Conceptos que deben aparecer en videos y campañas
 
 - Servicio confiable para departamentos.
