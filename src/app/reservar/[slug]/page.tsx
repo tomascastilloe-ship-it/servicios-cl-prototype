@@ -39,7 +39,7 @@ export default async function BookingPage({
               Cuéntale al profesional qué necesitas.
             </h1>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-neutral-600">
-              Esta ficha permite coordinar disponibilidad y honorarios sin compartir teléfonos antes de confirmar el match. La conversación inicial ocurre dentro de servicios.cl.
+              Esta ficha permite coordinar disponibilidad, honorarios y pago sin compartir teléfonos antes de confirmar el match. El cliente paga solo con tarjeta dentro de servicios.cl cuando el profesional confirma su llegada a la propiedad.
             </p>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -84,8 +84,18 @@ export default async function BookingPage({
               </div>
             </div>
 
+            <div className="mt-8 rounded-[1.7rem] bg-neutral-950 p-5 text-white">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-rose-300">Pago seguro de la reserva</p>
+              <h2 className="mt-2 text-2xl font-black">No se paga en efectivo ni por fuera.</h2>
+              <div className="mt-4 grid gap-3 text-sm leading-6 text-white/75 md:grid-cols-3">
+                <p><strong className="text-white">1.</strong> La tarjeta queda como medio de pago de la plataforma.</p>
+                <p><strong className="text-white">2.</strong> El cobro se efectúa cuando el profesional confirma llegada al domicilio y horario acordado.</p>
+                <p><strong className="text-white">3.</strong> El profesional recibe transferencia bancaria 24–48 horas después de realizado el trabajo.</p>
+              </div>
+            </div>
+
             <button className="mt-8 w-full rounded-full bg-[#ff385c] px-6 py-4 font-black text-white transition hover:bg-[#e31c5f]">
-              Enviar solicitud de match
+              Enviar solicitud de match y continuar a pago con tarjeta
             </button>
           </section>
 

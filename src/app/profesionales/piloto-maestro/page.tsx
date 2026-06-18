@@ -26,6 +26,7 @@ const profileFields = [
   ["Experiencia", "Más de 8 años en reparaciones y mantención domiciliaria"],
   ["Precio visita desde", "$25.000"],
   ["Precio hora desde", "$18.000"],
+  ["Pago al maestro", "Transferencia bancaria 24–48 horas después del trabajo"],
   ["Estado", "Pendiente de validación final y video"],
 ];
 
@@ -158,6 +159,28 @@ export default function PilotProfessionalPage() {
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-black text-neutral-950">3</span>
                   <h3 className="mt-5 font-black">Monitorear</h3>
                   <p className="mt-2 text-sm leading-6 text-white/65">La plataforma revisa solicitudes, match y reputación.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Modelo económico</p>
+              <h2 className="mt-2 text-3xl font-black tracking-tight">Cómo se cobra y cómo se paga</h2>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                <div className="rounded-2xl border border-neutral-200 p-5">
+                  <p className="text-2xl font-black">1</p>
+                  <h3 className="mt-3 font-black">Cliente usa tarjeta</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">La única forma de contratar dentro de la plataforma será con tarjeta de crédito o débito.</p>
+                </div>
+                <div className="rounded-2xl border border-neutral-200 p-5">
+                  <p className="text-2xl font-black">2</p>
+                  <h3 className="mt-3 font-black">Cobro al llegar</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">El cobro se activa cuando el maestro confirma que llegó a la propiedad en el horario establecido.</p>
+                </div>
+                <div className="rounded-2xl border border-neutral-200 p-5">
+                  <p className="text-2xl font-black">3</p>
+                  <h3 className="mt-3 font-black">Transferencia 24–48h</h3>
+                  <p className="mt-2 text-sm leading-6 text-neutral-600">El prestador recibe su pago por transferencia bancaria después de realizado el trabajo, por orden contable.</p>
                 </div>
               </div>
             </div>

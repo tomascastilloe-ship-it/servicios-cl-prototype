@@ -88,19 +88,24 @@ export default async function ServiceDetailPage({
                 </div>
 
                 <div className="rounded-[1.7rem] bg-neutral-950 p-6 text-white">
-                  <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
+                  <div className="flex flex-col justify-between gap-4 md:flex-row md:items-start">
                     <div>
                       <p className="text-sm font-black uppercase tracking-[0.18em] text-rose-300">
-                        Comunicación protegida
+                        Pago protegido + comunicación interna
                       </p>
-                      <h3 className="mt-2 text-2xl font-black">El chat se habilita después del match.</h3>
+                      <h3 className="mt-2 text-2xl font-black">El cliente paga con tarjeta cuando el profesional llega.</h3>
                       <p className="mt-3 max-w-3xl leading-7 text-white/70">
-                        Antes de confirmar honorario y disponibilidad, la plataforma filtra teléfonos, correos y datos de contacto. La conversación queda dentro de servicios.cl para proteger a ambas partes.
+                        La reserva se coordina dentro de servicios.cl. El pago se realiza solo con tarjeta cuando el profesional confirma que llegó a la propiedad en el horario acordado. La plataforma mantiene el control de la operación y paga al profesional por transferencia 24 a 48 horas después de realizado el trabajo.
                       </p>
                     </div>
                     <span className="rounded-full bg-white/10 px-5 py-3 text-sm font-black ring-1 ring-white/15">
-                      Teléfonos bloqueados antes de confirmar
+                      Sin efectivo · sin pago externo
                     </span>
+                  </div>
+                  <div className="mt-6 grid gap-3 md:grid-cols-3">
+                    {["1. Reserva y match interno", "2. Profesional confirma llegada", "3. Pago con tarjeta y transferencia 24–48h"].map((step) => (
+                      <div key={step} className="rounded-2xl bg-white/10 p-4 text-sm font-bold text-white/80 ring-1 ring-white/10">{step}</div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -112,7 +117,7 @@ export default async function ServiceDetailPage({
               <div>
                 <p className="text-sm text-neutral-500">Precio definido por profesional</p>
                 <p className="text-3xl font-black">{service.price}</p>
-                <p className="text-sm text-neutral-600">desde · pago al llegar</p>
+                <p className="text-sm text-neutral-600">desde · pago con tarjeta al confirmar llegada</p>
               </div>
               <span className="rounded-full bg-rose-50 px-3 py-2 text-sm font-black text-[#d70466]">
                 {service.commune}
@@ -132,12 +137,12 @@ export default async function ServiceDetailPage({
             </div>
 
             <div className="mt-5 rounded-2xl bg-neutral-50 p-4">
-              <p className="font-black">Ficha rápida del cliente</p>
+              <p className="font-black">Cómo funciona el pago</p>
               <div className="mt-3 space-y-2 text-sm text-neutral-600">
-                <p>1. Nombre y comuna.</p>
-                <p>2. Fecha/hora preferida.</p>
-                <p>3. Detalle del problema o servicio.</p>
-                <p>4. Chat interno sin compartir teléfono antes del match.</p>
+                <p>1. Cliente solicita match y agenda.</p>
+                <p>2. Profesional acepta horario y valor estimado.</p>
+                <p>3. Al llegar a la propiedad, se activa el pago con tarjeta.</p>
+                <p>4. Profesional recibe transferencia 24–48 horas después del trabajo.</p>
               </div>
             </div>
 

@@ -331,12 +331,45 @@ export default function ProfessionalApplicationPage() {
                 </div>
               </section>
 
+              <section>
+                <h3 className="text-2xl font-black">7. Datos bancarios y forma de pago</h3>
+                <p className="mt-2 leading-7 text-neutral-600">
+                  El prestador no cobra directamente al cliente. La plataforma cobra con tarjeta cuando el profesional confirma llegada a la propiedad y luego paga al prestador por transferencia bancaria, normalmente 24 a 48 horas después de realizado el trabajo.
+                </p>
+                <div className="mt-5 grid gap-4 md:grid-cols-2">
+                  <div className="space-y-2">
+                    <FieldLabel>Banco</FieldLabel>
+                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Banco de Chile, Santander, Estado" />
+                  </div>
+                  <div className="space-y-2">
+                    <FieldLabel>Tipo de cuenta</FieldLabel>
+                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                      <option>Cuenta corriente</option>
+                      <option>Cuenta vista</option>
+                      <option>Cuenta RUT</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2">
+                    <FieldLabel>Número de cuenta</FieldLabel>
+                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Número de cuenta para transferencia" />
+                  </div>
+                  <div className="space-y-2">
+                    <FieldLabel>Nombre titular de la cuenta</FieldLabel>
+                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Debe coincidir idealmente con el prestador" />
+                  </div>
+                </div>
+                <div className="mt-5 rounded-2xl bg-neutral-950 p-5 text-sm leading-6 text-white">
+                  <p className="font-black">Regla económica para el prestador</p>
+                  <p className="mt-2 text-white/70">El cliente paga con tarjeta dentro de servicios.cl; no se permite recibir pagos externos, efectivo, transferencia directa ni WhatsApp para cerrar por fuera. El pago al prestador se libera por transferencia bancaria luego de cumplir el servicio.</p>
+                </div>
+              </section>
+
               <section className="rounded-[1.7rem] bg-rose-50 p-5 ring-1 ring-rose-100 sm:p-6">
-                <h3 className="text-2xl font-black text-[#d70466]">7. Reglas de plataforma</h3>
+                <h3 className="text-2xl font-black text-[#d70466]">8. Reglas de plataforma</h3>
                 <div className="mt-4 space-y-3 text-sm font-bold text-neutral-700">
                   <label className="flex gap-3">
                     <input type="checkbox" className="mt-1 h-4 w-4 accent-[#ff385c]" />
-                    Acepto que las solicitudes, reservas y coordinación inicial deben quedar dentro de la plataforma.
+                    Acepto que las solicitudes, reservas, pagos y coordinación inicial deben quedar dentro de la plataforma.
                   </label>
                   <label className="flex gap-3">
                     <input type="checkbox" className="mt-1 h-4 w-4 accent-[#ff385c]" />
@@ -344,7 +377,7 @@ export default function ProfessionalApplicationPage() {
                   </label>
                   <label className="flex gap-3">
                     <input type="checkbox" className="mt-1 h-4 w-4 accent-[#ff385c]" />
-                    Acepto que el perfil será revisado antes de ser publicado.
+                    Acepto que el perfil será revisado antes de ser publicado y que recibiré pagos por transferencia 24–48 horas después de realizado el trabajo.
                   </label>
                 </div>
               </section>
