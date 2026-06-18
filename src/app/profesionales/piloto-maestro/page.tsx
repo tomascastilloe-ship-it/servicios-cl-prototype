@@ -41,6 +41,28 @@ const videoSteps = [
   "Envíanos el video por WhatsApp. No tiene que ser perfecto; tiene que ser claro y honesto.",
 ];
 
+const blockedExamples = [
+  "Mándame tu WhatsApp",
+  "+56 9 1234 5678",
+  "Te pago por fuera",
+  "Escríbeme al correo",
+  "Hablemos directo y lo cerramos",
+];
+
+const providerRatingItems = [
+  "Puntualidad en la visita",
+  "Calidad del trabajo o diagnóstico",
+  "Orden y limpieza del lugar",
+  "Cordialidad y comunicación humana",
+];
+
+const clientRatingItems = [
+  "Comunicación clara con el maestro",
+  "Entregó acceso e información necesaria",
+  "Fue razonable con horarios y condiciones",
+  "Permitió trabajar de forma segura y ordenada",
+];
+
 const availability = [
   { day: "Lunes", blocks: ["09:00–13:00", "15:00–18:00"] },
   { day: "Martes", blocks: ["10:00–14:00"] },
@@ -212,6 +234,67 @@ export default function PilotProfessionalPage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Chat protegido tipo Airbnb</p>
+              <h2 className="mt-2 text-3xl font-black tracking-tight">Toda la comunicación ocurre dentro de servicios.cl</h2>
+              <p className="mt-3 leading-7 text-neutral-600">
+                Antes del match y del pago, cliente y maestro pueden hacer preguntas por chat interno, pero no pueden compartir teléfonos, WhatsApp, correos ni datos para cerrar por fuera. Si alguien intenta hacerlo, el sistema muestra una tarjeta amarilla y bloquea el mensaje.
+              </p>
+              <div className="mt-6 grid gap-4 lg:grid-cols-[1fr_0.9fr]">
+                <div className="rounded-3xl border border-neutral-200 p-5">
+                  <h3 className="text-xl font-black">Ejemplos de mensajes bloqueados</h3>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {blockedExamples.map((example) => (
+                      <span key={example} className="rounded-full bg-amber-50 px-4 py-2 text-sm font-black text-amber-900 ring-1 ring-amber-200">
+                        ⚠️ {example}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-3xl bg-neutral-950 p-5 text-white">
+                  <p className="font-black">Tarjeta amarilla automática</p>
+                  <p className="mt-3 text-sm leading-7 text-white/70">
+                    “Por seguridad, no está permitido compartir teléfonos, correos, WhatsApp ni coordinar pagos por fuera. Haz tus preguntas por este chat. Si vuelves a intentarlo, tu cuenta puede quedar suspendida.”
+                  </p>
+                </div>
+              </div>
+              <div className="mt-5 rounded-3xl bg-rose-50 p-5 text-rose-950 ring-1 ring-rose-100">
+                <p className="font-black">Mensajes de voz</p>
+                <p className="mt-2 text-sm leading-7">
+                  Si el cliente no quiere escribir, puede enviar audio. La app transforma ese audio a texto y el sistema revisa el contenido antes de entregarlo al maestro. Así evitamos que se pasen teléfonos por voz.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Evaluación doble</p>
+              <h2 className="mt-2 text-3xl font-black tracking-tight">Cliente evalúa al maestro y maestro evalúa al cliente</h2>
+              <div className="mt-6 grid gap-5 md:grid-cols-2">
+                <div className="rounded-3xl border border-neutral-200 p-5">
+                  <h3 className="text-xl font-black">Evaluación del maestro</h3>
+                  <div className="mt-4 space-y-3">
+                    {providerRatingItems.map((item) => (
+                      <div key={item} className="rounded-2xl bg-neutral-50 p-4">
+                        <p className="font-bold text-neutral-700">{item}</p>
+                        <p className="mt-2 text-[#ff385c]">★ ★ ★ ★ ★</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-3xl border border-neutral-200 p-5">
+                  <h3 className="text-xl font-black">Evaluación del cliente</h3>
+                  <div className="mt-4 space-y-3">
+                    {clientRatingItems.map((item) => (
+                      <div key={item} className="rounded-2xl bg-neutral-50 p-4">
+                        <p className="font-bold text-neutral-700">{item}</p>
+                        <p className="mt-2 text-[#ff385c]">★ ★ ★ ★ ★</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
 

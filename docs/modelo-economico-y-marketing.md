@@ -116,3 +116,30 @@ No mezclar marcas sin definir estrategia:
 
 - Propiedades Castillo puede ser respaldo operativo o canal de confianza.
 - servicios.cl debe construirse como marca independiente de servicios para departamentos.
+
+## Chat interno protegido y bloqueo anti-contacto externo
+
+- La comunicación cliente/maestro debe ocurrir dentro del chat de servicios.cl, similar al modelo de Airbnb.
+- Antes del match o antes del pago no se pueden compartir teléfonos, WhatsApp, correos, Instagram, direcciones externas ni instrucciones para pagar por fuera.
+- Si el sistema detecta números de teléfono, correos o frases como “págame por fuera”, el mensaje no debe llegar al destinatario.
+- El usuario recibe una advertencia tipo tarjeta amarilla: “Por seguridad, no está permitido compartir datos de contacto ni coordinar pagos por fuera. Usa este chat para tus preguntas.”
+- Si insiste, se puede suspender o expulsar de la plataforma.
+- Si el cliente no quiere escribir, puede enviar audio. El audio debe transformarse a texto y ser revisado por el filtro antes de llegar al maestro.
+
+## Evaluaciones posteriores al servicio
+
+Evaluación del maestro por parte del cliente:
+
+- Puntualidad en la visita.
+- Calidad del trabajo o diagnóstico.
+- Orden y limpieza del lugar.
+- Cordialidad y capacidad humana para comunicarse.
+
+Evaluación del cliente por parte del maestro:
+
+- Comunicación clara.
+- Entregó acceso e información necesaria.
+- Fue razonable con horarios y condiciones.
+- Permitió realizar el trabajo de manera segura y ordenada.
+
+Estas evaluaciones deben servir para reputación, ranking, prevención de malos clientes/prestadores y soporte interno.

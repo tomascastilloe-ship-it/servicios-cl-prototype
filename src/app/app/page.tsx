@@ -91,9 +91,17 @@ export default function AppPrototypePage() {
                     <p>□ Captura de pago</p>
                   </div>
                 </div>
+                <div className="rounded-3xl bg-amber-50 p-4 text-amber-950 ring-1 ring-amber-200">
+                  <p className="text-sm font-black">⚠️ Chat protegido</p>
+                  <p className="mt-2 text-xs leading-5">No se permiten teléfonos, correos ni pagos por fuera. Los audios se convierten a texto antes de enviarse.</p>
+                </div>
                 <button className="w-full rounded-full bg-neutral-950 px-5 py-4 font-black text-white">
                   Confirmar llegada
                 </button>
+                <div className="rounded-3xl bg-neutral-100 p-4">
+                  <p className="text-sm font-black">Evaluación posterior</p>
+                  <p className="mt-2 text-xs leading-5 text-neutral-600">Puntualidad · Calidad · Limpieza · Cordialidad · Cliente colaborativo</p>
+                </div>
                 <p className="text-center text-xs leading-5 text-neutral-500">
                   La confirmación también podrá enviarse por WhatsApp automático para cliente y prestador.
                 </p>
