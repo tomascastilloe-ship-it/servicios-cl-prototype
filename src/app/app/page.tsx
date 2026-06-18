@@ -35,6 +35,13 @@ const moderationRules = [
   "Si la persona no quiere escribir, puede enviar audio; la app lo convierte a texto y revisa el texto antes de publicarlo en el chat.",
 ];
 
+const reviewItems = [
+  "Puntualidad",
+  "Calidad del trabajo o visita",
+  "Orden y limpieza del lugar",
+  "Cordialidad y comunicación",
+];
+
 export default function AppPrototypePage() {
   return (
     <main className="min-h-screen bg-[#f7f7f7] text-neutral-950">
@@ -112,6 +119,39 @@ export default function AppPrototypePage() {
             </div>
           </div>
         </div>
+
+
+
+        <section className="mt-8 grid gap-6 lg:grid-cols-2">
+          <div className="rounded-[2rem] bg-neutral-950 p-6 text-white shadow-xl sm:p-8">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-rose-200">Chat protegido tipo Airbnb</p>
+            <h2 className="mt-2 text-3xl font-black tracking-tight">La comunicación queda dentro de la plataforma</h2>
+            <p className="mt-3 leading-7 text-white/70">
+              Antes del match no se pueden compartir teléfonos ni datos externos. Si el cliente o el maestro intenta saltarse la plataforma, el sistema bloquea el mensaje y muestra una advertencia.
+            </p>
+            <div className="mt-6 space-y-3">
+              {moderationRules.map((rule) => (
+                <div key={rule} className="rounded-2xl bg-white/10 p-4 text-sm font-bold text-white/80 ring-1 ring-white/10">✓ {rule}</div>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
+            <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Evaluación doble</p>
+            <h2 className="mt-2 text-3xl font-black tracking-tight">Cliente y maestro se evalúan</h2>
+            <p className="mt-3 leading-7 text-neutral-600">
+              Después de la visita, ambos lados califican la experiencia. Esto ayuda a proteger la calidad de la red y detectar clientes o prestadores problemáticos.
+            </p>
+            <div className="mt-6 grid gap-3">
+              {reviewItems.map((item) => (
+                <div key={item} className="flex items-center justify-between rounded-2xl border border-neutral-200 p-4">
+                  <span className="font-black">{item}</span>
+                  <span className="text-lg text-amber-500">★★★★★</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="mt-12 rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-neutral-200 sm:p-8">
           <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Flujo operacional</p>

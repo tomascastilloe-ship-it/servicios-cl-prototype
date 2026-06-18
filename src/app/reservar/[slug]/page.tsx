@@ -87,6 +87,29 @@ export default async function BookingPage({
               </div>
             </div>
 
+            <div className="mt-8 rounded-[1.7rem] bg-amber-50 p-5 text-amber-950 ring-1 ring-amber-200">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-amber-700">Chat protegido</p>
+              <h2 className="mt-2 text-2xl font-black">No está permitido compartir teléfonos ni cerrar por fuera.</h2>
+              <p className="mt-3 text-sm leading-6">
+                Si necesitas preguntar detalles del trabajo, escríbelo en el chat interno. Si prefieres hablar, usa el botón de audio: la plataforma transforma tu voz a texto y revisa automáticamente que no se compartan datos externos. Si se intenta enviar teléfono, WhatsApp, correo o Instagram, el mensaje se bloquea y se genera una advertencia.
+              </p>
+              <div className="mt-4 grid gap-3 md:grid-cols-3">
+                <div className="rounded-2xl bg-white/70 p-4 text-sm font-bold">⚠️ Tarjeta amarilla por pedir contacto externo</div>
+                <div className="rounded-2xl bg-white/70 p-4 text-sm font-bold">🚫 Mensaje cancelado si trae teléfono o correo</div>
+                <div className="rounded-2xl bg-white/70 p-4 text-sm font-bold">🎙️ Audio a texto para revisar seguridad</div>
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-[1.7rem] bg-white p-5 ring-1 ring-neutral-200">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ff385c]">Evaluación después de la visita</p>
+              <h2 className="mt-2 text-2xl font-black">Ambos lados califican la experiencia</h2>
+              <div className="mt-4 grid gap-3 md:grid-cols-2">
+                {["Puntualidad", "Calidad del trabajo/visita", "Orden y limpieza", "Cordialidad y comunicación"].map((item) => (
+                  <div key={item} className="rounded-2xl border border-neutral-200 p-4 text-sm font-black">{item} <span className="text-amber-500">★★★★★</span></div>
+                ))}
+              </div>
+            </div>
+
             <div className="mt-8 rounded-[1.7rem] bg-neutral-950 p-5 text-white">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-rose-300">Pago seguro de la reserva</p>
               <h2 className="mt-2 text-2xl font-black">No se paga en efectivo ni por fuera.</h2>

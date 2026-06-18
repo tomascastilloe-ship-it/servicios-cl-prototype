@@ -169,3 +169,29 @@ Evaluación del cliente por parte del maestro:
 - Permitió realizar el trabajo de manera segura y ordenada.
 
 Estas evaluaciones deben servir para reputación, ranking, prevención de malos clientes/prestadores y soporte interno.
+
+## Chat protegido y moderación
+
+- La comunicación entre cliente y maestro debe ocurrir dentro de servicios.cl, igual que en plataformas tipo Airbnb.
+- Antes del match está prohibido compartir teléfonos, correos, WhatsApp, Instagram u otros datos externos.
+- Si el sistema detecta números o contacto externo, el mensaje se cancela antes de llegar.
+- Primer intento: tarjeta amarilla / warning educativo.
+- Reincidencia: suspensión o expulsión de la plataforma.
+- Los mensajes de voz deben transformarse a texto para revisión automática antes de enviarse al chat.
+- El texto de advertencia debe explicar: “Para proteger a ambos, toda coordinación y pago debe hacerse dentro de servicios.cl”.
+
+## Evaluaciones
+
+Evaluación al maestro por parte del cliente:
+
+- Puntualidad.
+- Calidad del trabajo o visita.
+- Orden y limpieza del lugar.
+- Cordialidad y capacidad de comunicación.
+
+Evaluación al cliente por parte del maestro:
+
+- Comunicación clara.
+- Persona razonable y respetuosa.
+- Entregó acceso, información y condiciones necesarias para trabajar.
+- Permitió realizar el trabajo o visita de forma óptima.
