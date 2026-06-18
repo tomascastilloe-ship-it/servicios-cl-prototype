@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const serviceOptions = [
-  "Mantención general",
+  "Maestro multifunción / mantención general",
   "Electricidad menor",
   "Gasfitería menor",
   "Cerrajería",
@@ -14,6 +14,7 @@ const serviceOptions = [
   "Limpieza de vidrios",
   "Paseo de perros",
   "Lavado de autos a domicilio",
+  "Otros servicios a domicilio",
 ];
 
 const availabilityBlocks = [
@@ -33,17 +34,39 @@ const availabilityBlocks = [
 
 const onboardingSteps = [
   {
-    title: "Conectar",
-    description: "Datos reales, teléfono, comuna base y video de presentación.",
+    title: "Identificar",
+    description: "Nombre, RUT, contacto, comuna base y datos para validación interna.",
   },
   {
-    title: "Gestionar",
-    description: "Servicios, precios desde, zonas de cobertura y calendario semanal.",
+    title: "Presentar",
+    description: "Video de más de 1 minuto, experiencia, fotos de trabajos y especialidades.",
   },
   {
-    title: "Monitorear",
-    description: "Documentos, reglas de plataforma, reputación y solicitudes recibidas.",
+    title: "Configurar",
+    description: "Servicios, precios desde, cobertura, disponibilidad semanal y reglas de reserva.",
   },
+  {
+    title: "Aprobar",
+    description: "Revisión interna, perfil público, match protegido y seguimiento de reputación.",
+  },
+];
+
+const pilotChecklist = [
+  "Confirmar identidad y teléfono del maestro.",
+  "Grabar video vertical de presentación, ideal 60 a 90 segundos.",
+  "Definir 3 a 6 servicios principales que realmente pueda ejecutar.",
+  "Acordar precios desde y cuándo requiere cotización previa.",
+  "Cargar fotos reales de trabajos anteriores si tiene disponibles.",
+  "Definir comunas piloto: Ñuñoa y Providencia primero.",
+  "Acordar reglas: no sacar al cliente de la plataforma antes del match.",
+];
+
+const videoScript = [
+  "Hola, soy [nombre] y trabajo en [servicios principales].",
+  "Tengo [años] de experiencia haciendo trabajos en casas y departamentos.",
+  "Puedo ayudar en [3 ejemplos concretos de trabajos].",
+  "Trabajo principalmente en [comunas] y mi disponibilidad habitual es [días/horarios].",
+  "Mi forma de trabajo es clara: reviso el problema, explico el valor y coordino por la plataforma.",
 ];
 
 function FieldLabel({ children }: { children: React.ReactNode }) {
@@ -64,10 +87,10 @@ export default function ProfessionalApplicationPage() {
                   Alta de profesional
                 </p>
                 <h1 className="mt-4 text-4xl font-black tracking-[-0.04em] sm:text-5xl">
-                  Ficha para ingresar al primer maestro.
+                  Ficha completa para ingresar al primer maestro.
                 </h1>
                 <p className="mt-5 leading-8 text-white/75">
-                  Esta pantalla simula el formulario que usará una persona que ofrece servicios para postular, dejar sus datos, explicar experiencia y configurar su disponibilidad antes de aparecer publicada.
+                  Esta es la ficha guiada para registrar al primer prestador real: datos, video, experiencia, servicios, precios, comunas, agenda y aprobación interna antes de publicarlo.
                 </p>
               </div>
 
@@ -97,12 +120,12 @@ export default function ProfessionalApplicationPage() {
           <section className="rounded-[2rem] bg-white p-5 shadow-sm ring-1 ring-neutral-200 sm:p-8 lg:p-10">
             <div className="flex flex-col gap-4 border-b border-neutral-200 pb-7 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Formulario tipo</p>
+                <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Formulario del prestador</p>
                 <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
-                  Postulación de prestador de servicios
+                  Alta de maestro / profesional de servicios
                 </h2>
                 <p className="mt-3 max-w-2xl leading-7 text-neutral-600">
-                  Campos pensados para validar identidad, experiencia, cobertura, precios, disponibilidad y compromiso con las reglas de la plataforma.
+                  Formulario pensado para cargar a la primera persona que ofrecerá servicios, dejar su perfil listo y después conectarlo a base de datos, video y agenda real.
                 </p>
               </div>
               <Link className="rounded-full border border-neutral-300 px-5 py-3 text-sm font-black transition hover:border-neutral-950" href="/profesionales">
@@ -111,6 +134,27 @@ export default function ProfessionalApplicationPage() {
             </div>
 
             <form className="mt-8 space-y-10">
+              <section className="rounded-[1.7rem] border border-neutral-200 bg-neutral-50 p-5 sm:p-6">
+                <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                  <div>
+                    <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ff385c]">Tipo de alta recomendada</p>
+                    <h3 className="mt-2 text-2xl font-black">Ficha guiada + aprobación manual</h3>
+                    <p className="mt-2 max-w-2xl leading-7 text-neutral-600">
+                      Para el primer maestro conviene que el formulario lo completemos nosotros con él, por teléfono o presencial, y luego dejemos su perfil publicado como caso piloto.
+                    </p>
+                  </div>
+                  <span className="rounded-full bg-neutral-950 px-4 py-2 text-sm font-black text-white">Piloto v1</span>
+                </div>
+                <div className="mt-5 grid gap-3 md:grid-cols-2">
+                  {pilotChecklist.map((item) => (
+                    <div key={item} className="flex gap-3 rounded-2xl bg-white p-4 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200">
+                      <span className="text-[#ff385c]">✓</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
               <section>
                 <h3 className="text-2xl font-black">1. Datos personales y contacto</h3>
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -130,9 +174,22 @@ export default function ProfessionalApplicationPage() {
                     <FieldLabel>Correo electrónico</FieldLabel>
                     <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: maestro@email.com" />
                   </div>
-                  <div className="space-y-2 md:col-span-2">
+                  <div className="space-y-2">
                     <FieldLabel>Comuna donde vive o desde donde sale a trabajar</FieldLabel>
                     <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Ñuñoa, Macul, Providencia, Santiago Centro" />
+                  </div>
+                  <div className="space-y-2">
+                    <FieldLabel>Medio preferido para contactarlo</FieldLabel>
+                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                      <option>WhatsApp</option>
+                      <option>Llamada telefónica</option>
+                      <option>Correo electrónico</option>
+                      <option>Indiferente</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2 md:col-span-2">
+                    <FieldLabel>Observación interna</FieldLabel>
+                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: referido por Tomás, primer maestro piloto, disponible para grabar video esta semana" />
                   </div>
                 </div>
               </section>
@@ -175,6 +232,10 @@ export default function ProfessionalApplicationPage() {
                     <FieldLabel>Presentación breve para clientes</FieldLabel>
                     <textarea className="min-h-32 w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Cuéntanos qué haces, qué experiencia tienes, cómo trabajas y por qué un cliente debería confiar en ti." />
                   </div>
+                  <div className="space-y-2 md:col-span-2">
+                    <FieldLabel>Trabajos que NO realiza o límites del servicio</FieldLabel>
+                    <textarea className="min-h-24 w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: no hace trabajos con gas certificado, no realiza obras mayores, no trabaja domingos, no compra materiales sin abono." />
+                  </div>
                 </div>
               </section>
 
@@ -190,6 +251,14 @@ export default function ProfessionalApplicationPage() {
                     <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$18.000" />
                   </div>
                   <div className="space-y-2">
+                    <FieldLabel>Precio diagnóstico desde</FieldLabel>
+                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$15.000" />
+                  </div>
+                  <div className="space-y-2 md:col-span-3">
+                    <FieldLabel>Servicios con precio fijo sugerido</FieldLabel>
+                    <textarea className="min-h-24 w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: instalar lámpara desde $20.000, cambiar enchufe desde $18.000, reparar bisagra desde $15.000." />
+                  </div>
+                  <div className="space-y-2 md:col-span-3">
                     <FieldLabel>Costo de materiales</FieldLabel>
                     <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
                       <option>Cliente compra materiales</option>
@@ -236,6 +305,14 @@ export default function ProfessionalApplicationPage() {
                     <p className="mt-2 text-sm leading-6 text-neutral-600">
                       Debe durar más de 1 minuto. Debe decir quién es, qué servicios realiza, experiencia, comunas y forma de trabajo.
                     </p>
+                    <div className="mt-4 rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
+                      <p className="text-sm font-black text-neutral-800">Guion sugerido</p>
+                      <ul className="mt-2 space-y-2 text-sm leading-6 text-neutral-600">
+                        {videoScript.map((line) => (
+                          <li key={line}>• {line}</li>
+                        ))}
+                      </ul>
+                    </div>
                     <button type="button" className="mt-5 rounded-full bg-neutral-950 px-5 py-3 text-sm font-black text-white">
                       Subir video
                     </button>
