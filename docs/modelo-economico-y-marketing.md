@@ -10,9 +10,11 @@ Este documento separa el proyecto **servicios.cl** de **Propiedades Castillo Aso
 - El cliente contrata servicios exclusivamente dentro de la plataforma.
 - El medio de pago del cliente será tarjeta de crédito/débito.
 - No se promueven pagos en efectivo, transferencias directas ni pagos por fuera.
-- El pago se efectúa cuando el prestador/maestro confirma que llegó a la propiedad en el horario acordado.
+- El pago se efectúa cuando el prestador/maestro confirma que llegó a la propiedad en el horario acordado y el cliente confirma que efectivamente se presentó.
+- La confirmación podrá hacerse por mensaje automático de WhatsApp o dentro de la app.
+- Con ambas confirmaciones se activa el cobro a la tarjeta del cliente.
 - El prestador recibe su pago mediante transferencia bancaria.
-- La transferencia al prestador se realiza normalmente 24 a 48 horas después de realizado el trabajo, por orden contable y control de servicio.
+- La transferencia al prestador se realiza normalmente 24 a 48 horas después de realizado el trabajo o visita, por orden contable y control de servicio.
 
 ## Mensaje para clientes
 
