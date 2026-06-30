@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff8ef;
-  --foreground: #241a14;
-  --brand-ink: #241a14;
-  --brand-terracotta: #e45b2d;
-  --brand-clay: #b86b3a;
-  --brand-sand: #fff3e3;
-  --brand-leaf: #2f7d5a;
+  --background: #F7F6FF;
+  --foreground: #14123D;
+  --brand-ink: #14123D;
+  --brand-blue: #3F35F2;
+  --brand-violet: #4F46FF;
+  --brand-lavender: #F1EFFF;
+  --brand-deep: #14123D;
 }
 
 @theme inline {
@@ -37,6 +37,6 @@ a {
 }
 
 ::selection {
-  background: #e45b2d;
+  background: #3F35F2;
   color: white;
 }

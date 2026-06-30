@@ -67,7 +67,7 @@ const videoScript = [
   "Hago trabajos como: cambiar enchufes, revisar luces, reparar filtraciones, instalar repisas, pintar detalles o arreglar muebles.",
   "Si tengo certificados, cursos o experiencia especial, lo digo de forma simple.",
   "Trabajo principalmente en [comunas] y mi disponibilidad habitual es [días/horarios].",
-  "Cierro diciendo: trabajo con servicios.cl, coordino por la plataforma y me gusta dejar claro el valor antes de comenzar.",
+  "Cierro diciendo: trabajo con burro.cl, coordino por la plataforma y me gusta dejar claro el valor antes de comenzar.",
 ];
 
 const concreteExamples = [
@@ -93,15 +93,15 @@ function FieldLabel({ children }: { children: React.ReactNode }) {
 
 export default function ProfessionalApplicationPage() {
   return (
-    <main className="min-h-screen bg-[#f7f7f7] text-neutral-950">
+    <main className="min-h-screen bg-[#f7f7f7] text-[#14123D]">
       <SiteHeader />
 
       <section className="mx-auto max-w-7xl px-5 py-8 lg:px-8 lg:py-12">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <aside className="lg:sticky lg:top-24">
-            <div className="overflow-hidden rounded-[2rem] bg-neutral-950 text-white shadow-xl">
+            <div className="overflow-hidden rounded-[2rem] bg-[#14123D] text-white shadow-xl">
               <div className="bg-[radial-gradient(circle_at_20%_20%,rgba(255,56,92,0.45),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.22),transparent_25%)] p-7 sm:p-9">
-                <p className="text-sm font-black uppercase tracking-[0.2em] text-rose-200">
+                <p className="text-sm font-black uppercase tracking-[0.2em] text-[#C8C5FF]">
                   Alta de profesional
                 </p>
                 <h1 className="mt-4 text-4xl font-black tracking-[-0.04em] sm:text-5xl">
@@ -115,7 +115,7 @@ export default function ProfessionalApplicationPage() {
               <div className="space-y-4 p-6 sm:p-8">
                 {onboardingSteps.map((step, index) => (
                   <div key={step.title} className="flex gap-4 rounded-[1.4rem] bg-white/10 p-4 ring-1 ring-white/10">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-sm font-black text-neutral-950">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-sm font-black text-[#14123D]">
                       {index + 1}
                     </span>
                     <div>
@@ -127,7 +127,7 @@ export default function ProfessionalApplicationPage() {
               </div>
             </div>
 
-            <div className="mt-5 rounded-[1.6rem] border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950">
+            <div className="mt-5 rounded-[1.6rem] border border-amber-200 bg-[#FFF8DD] p-5 text-sm leading-6 text-[#4A3A00]">
               <p className="font-black">Nota para el piloto</p>
               <p className="mt-2">
                 Para el primer maestro podemos completarlo manualmente con sus datos reales y después convertir esta ficha en formulario conectado a base de datos, video y aprobación interna.
@@ -136,37 +136,37 @@ export default function ProfessionalApplicationPage() {
           </aside>
 
           <section className="rounded-[2rem] bg-white p-5 shadow-sm ring-1 ring-neutral-200 sm:p-8 lg:p-10">
-            <div className="flex flex-col gap-4 border-b border-neutral-200 pb-7 md:flex-row md:items-end md:justify-between">
+            <div className="flex flex-col gap-4 border-b border-[#E7E5FF] pb-7 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">Formulario del prestador</p>
+                <p className="text-sm font-black uppercase tracking-[0.2em] text-[#3F35F2]">Formulario del prestador</p>
                 <h2 className="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
                   Alta de maestro / profesional de servicios
                 </h2>
-                <p className="mt-3 max-w-2xl leading-7 text-neutral-600">
+                <p className="mt-3 max-w-2xl leading-7 text-[#5E5A8F]">
                   Formulario pensado para cargar a la primera persona que ofrecerá servicios, dejar su perfil listo y después conectarlo a base de datos, video y agenda real.
                 </p>
               </div>
-              <Link className="rounded-full border border-neutral-300 px-5 py-3 text-sm font-black transition hover:border-neutral-950" href="/profesionales">
+              <Link className="rounded-full border border-[#D8D6FF] px-5 py-3 text-sm font-black transition hover:border-[#3F35F2]" href="/profesionales">
                 Volver
               </Link>
             </div>
 
             <form className="mt-8 space-y-10">
-              <section className="rounded-[1.7rem] border border-neutral-200 bg-neutral-50 p-5 sm:p-6">
+              <section className="rounded-[1.7rem] border border-[#E7E5FF] bg-neutral-50 p-5 sm:p-6">
                 <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                   <div>
-                    <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ff385c]">Tipo de alta recomendada</p>
+                    <p className="text-sm font-black uppercase tracking-[0.18em] text-[#3F35F2]">Tipo de alta recomendada</p>
                     <h3 className="mt-2 text-2xl font-black">Ficha guiada + aprobación manual</h3>
-                    <p className="mt-2 max-w-2xl leading-7 text-neutral-600">
+                    <p className="mt-2 max-w-2xl leading-7 text-[#5E5A8F]">
                       Para el primer maestro conviene que el formulario lo completemos nosotros con él, por teléfono o presencial, y luego dejemos su perfil publicado como caso piloto.
                     </p>
                   </div>
-                  <span className="rounded-full bg-neutral-950 px-4 py-2 text-sm font-black text-white">Piloto v1</span>
+                  <span className="rounded-full bg-[#14123D] px-4 py-2 text-sm font-black text-white">Piloto v1</span>
                 </div>
                 <div className="mt-5 grid gap-3 md:grid-cols-2">
                   {pilotChecklist.map((item) => (
-                    <div key={item} className="flex gap-3 rounded-2xl bg-white p-4 text-sm font-bold text-neutral-700 ring-1 ring-neutral-200">
-                      <span className="text-[#ff385c]">✓</span>
+                    <div key={item} className="flex gap-3 rounded-2xl bg-white p-4 text-sm font-bold text-[#27235F] ring-1 ring-neutral-200">
+                      <span className="text-[#3F35F2]">✓</span>
                       <span>{item}</span>
                     </div>
                   ))}
@@ -178,27 +178,27 @@ export default function ProfessionalApplicationPage() {
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
                   <div className="space-y-2">
                     <FieldLabel>Nombre completo</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Juan Pérez Soto" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Juan Pérez Soto" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>RUT</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: 12.345.678-9" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: 12.345.678-9" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Teléfono / WhatsApp</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: +56 9 1234 5678" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: +56 9 1234 5678" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Correo electrónico</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: maestro@email.com" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: maestro@email.com" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Comuna donde vive o desde donde sale a trabajar</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Ñuñoa, Macul, Providencia, Santiago Centro" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Ñuñoa, Macul, Providencia, Santiago Centro" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Medio preferido para contactarlo</FieldLabel>
-                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                    <select className="w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
                       <option>WhatsApp</option>
                       <option>Llamada telefónica</option>
                       <option>Correo electrónico</option>
@@ -207,37 +207,37 @@ export default function ProfessionalApplicationPage() {
                   </div>
                   <div className="space-y-2 md:col-span-2">
                     <FieldLabel>Observación interna</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: referido por Tomás, primer maestro piloto, disponible para grabar video esta semana" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: referido por Tomás, primer maestro piloto, disponible para grabar video esta semana" />
                   </div>
                 </div>
               </section>
 
               <section>
                 <h3 className="text-2xl font-black">2. Servicios que ofrece</h3>
-                <p className="mt-2 leading-7 text-neutral-600">Seleccionar todos los servicios que realmente sabe hacer y puede respaldar con experiencia.</p>
+                <p className="mt-2 leading-7 text-[#5E5A8F]">Seleccionar todos los servicios que realmente sabe hacer y puede respaldar con experiencia.</p>
                 <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {serviceOptions.map((service) => (
-                    <label key={service} className="flex cursor-pointer items-center gap-3 rounded-2xl border border-neutral-200 p-4 text-sm font-bold transition hover:border-neutral-950">
-                      <input type="checkbox" className="h-4 w-4 accent-[#ff385c]" />
+                    <label key={service} className="flex cursor-pointer items-center gap-3 rounded-2xl border border-[#E7E5FF] p-4 text-sm font-bold transition hover:border-[#3F35F2]">
+                      <input type="checkbox" className="h-4 w-4 accent-[#3F35F2]" />
                       {service}
                     </label>
                   ))}
                 </div>
                 <div className="mt-6 rounded-[1.7rem] bg-neutral-50 p-5 ring-1 ring-neutral-200">
                   <p className="font-black">Ejemplos para ayudar al maestro a explicar lo que hace</p>
-                  <p className="mt-2 text-sm leading-6 text-neutral-600">
+                  <p className="mt-2 text-sm leading-6 text-[#5E5A8F]">
                     Estos globitos sirven para que la persona no tenga que inventar una descripción complicada. Puede elegir los que correspondan y después escribir otros.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {concreteExamples.map((example) => (
-                      <span key={example} className="rounded-full bg-white px-4 py-2 text-sm font-black text-neutral-700 ring-1 ring-neutral-200">
+                      <span key={example} className="rounded-full bg-white px-4 py-2 text-sm font-black text-[#27235F] ring-1 ring-neutral-200">
                         {example}
                       </span>
                     ))}
                   </div>
                   <div className="mt-5 space-y-2">
                     <FieldLabel>Detalle exacto de trabajos que realiza</FieldLabel>
-                    <textarea className="min-h-28 w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: cambio enchufes, reviso luces, instalo lámparas, arreglo filtraciones simples, cambio sifones, instalo repisas, reparo puertas, hago pintura menor." />
+                    <textarea className="min-h-28 w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: cambio enchufes, reviso luces, instalo lámparas, arreglo filtraciones simples, cambio sifones, instalo repisas, reparo puertas, hago pintura menor." />
                   </div>
                 </div>
               </section>
@@ -247,7 +247,7 @@ export default function ProfessionalApplicationPage() {
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
                   <div className="space-y-2">
                     <FieldLabel>Años de experiencia</FieldLabel>
-                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                    <select className="w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
                       <option>Menos de 1 año</option>
                       <option>1 a 3 años</option>
                       <option>3 a 5 años</option>
@@ -257,7 +257,7 @@ export default function ProfessionalApplicationPage() {
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Tipo de atención</FieldLabel>
-                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                    <select className="w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
                       <option>Trabajo solo</option>
                       <option>Trabajo con ayudante</option>
                       <option>Trabajo con equipo</option>
@@ -265,11 +265,11 @@ export default function ProfessionalApplicationPage() {
                   </div>
                   <div className="space-y-2 md:col-span-2">
                     <FieldLabel>Presentación breve para clientes</FieldLabel>
-                    <textarea className="min-h-32 w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Cuéntanos qué haces, qué experiencia tienes, cómo trabajas y por qué un cliente debería confiar en ti." />
+                    <textarea className="min-h-32 w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Cuéntanos qué haces, qué experiencia tienes, cómo trabajas y por qué un cliente debería confiar en ti." />
                   </div>
                   <div className="space-y-2 md:col-span-2">
                     <FieldLabel>Trabajos que NO realiza o límites del servicio</FieldLabel>
-                    <textarea className="min-h-24 w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: no hace trabajos con gas certificado, no realiza obras mayores, no trabaja domingos, no compra materiales sin abono." />
+                    <textarea className="min-h-24 w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: no hace trabajos con gas certificado, no realiza obras mayores, no trabaja domingos, no compra materiales sin abono." />
                   </div>
                 </div>
               </section>
@@ -279,23 +279,23 @@ export default function ProfessionalApplicationPage() {
                 <div className="mt-5 grid gap-4 md:grid-cols-3">
                   <div className="space-y-2">
                     <FieldLabel>Precio visita desde</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$25.000" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$25.000" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Precio hora desde</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$18.000" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$18.000" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Precio diagnóstico desde</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$15.000" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="$15.000" />
                   </div>
                   <div className="space-y-2 md:col-span-3">
                     <FieldLabel>Servicios con precio fijo sugerido</FieldLabel>
-                    <textarea className="min-h-24 w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: instalar lámpara desde $20.000, cambiar enchufe desde $18.000, reparar bisagra desde $15.000." />
+                    <textarea className="min-h-24 w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: instalar lámpara desde $20.000, cambiar enchufe desde $18.000, reparar bisagra desde $15.000." />
                   </div>
                   <div className="space-y-2 md:col-span-3">
                     <FieldLabel>Costo de materiales</FieldLabel>
-                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                    <select className="w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
                       <option>Cliente compra materiales</option>
                       <option>Profesional cotiza materiales</option>
                       <option>Depende del servicio</option>
@@ -307,23 +307,23 @@ export default function ProfessionalApplicationPage() {
               <section>
                 <h3 className="text-2xl font-black">5. Cobertura y disponibilidad</h3>
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  <div className="rounded-[1.4rem] border border-neutral-200 p-5">
+                  <div className="rounded-[1.4rem] border border-[#E7E5FF] p-5">
                     <FieldLabel>Comunas que acepta atender</FieldLabel>
                     <div className="mt-4 space-y-3">
                       {["Ñuñoa", "Providencia", "Las Condes", "Santiago Centro", "La Reina"].map((commune) => (
-                        <label key={commune} className="flex items-center gap-3 font-bold text-neutral-700">
-                          <input type="checkbox" className="h-4 w-4 accent-[#ff385c]" />
+                        <label key={commune} className="flex items-center gap-3 font-bold text-[#27235F]">
+                          <input type="checkbox" className="h-4 w-4 accent-[#3F35F2]" />
                           {commune}
                         </label>
                       ))}
                     </div>
                   </div>
-                  <div className="rounded-[1.4rem] border border-neutral-200 p-5">
+                  <div className="rounded-[1.4rem] border border-[#E7E5FF] p-5">
                     <FieldLabel>Disponibilidad inicial</FieldLabel>
                     <div className="mt-4 grid grid-cols-2 gap-2">
                       {availabilityBlocks.map((block) => (
-                        <label key={block} className="flex items-center gap-2 rounded-xl bg-neutral-50 px-3 py-2 text-sm font-bold text-neutral-700">
-                          <input type="checkbox" className="h-4 w-4 accent-[#ff385c]" />
+                        <label key={block} className="flex items-center gap-2 rounded-xl bg-neutral-50 px-3 py-2 text-sm font-bold text-[#27235F]">
+                          <input type="checkbox" className="h-4 w-4 accent-[#3F35F2]" />
                           {block}
                         </label>
                       ))}
@@ -335,36 +335,36 @@ export default function ProfessionalApplicationPage() {
               <section>
                 <h3 className="text-2xl font-black">6. Video, fotos y documentos</h3>
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
-                  <div className="rounded-[1.4rem] border border-dashed border-neutral-300 bg-neutral-50 p-6">
+                  <div className="rounded-[1.4rem] border border-dashed border-[#D8D6FF] bg-neutral-50 p-6">
                     <p className="font-black">Video de presentación obligatorio</p>
-                    <p className="mt-2 text-sm leading-6 text-neutral-600">
+                    <p className="mt-2 text-sm leading-6 text-[#5E5A8F]">
                       Debe durar más de 1 minuto. Puede grabarse con celular, en vertical, y enviarse por WhatsApp. No buscamos un video perfecto: buscamos que el cliente entienda quién es, qué hace y por qué puede confiar.
                     </p>
                     <div className="mt-4 rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
                       <p className="text-sm font-black text-neutral-800">Guion sugerido</p>
-                      <ul className="mt-2 space-y-2 text-sm leading-6 text-neutral-600">
+                      <ul className="mt-2 space-y-2 text-sm leading-6 text-[#5E5A8F]">
                         {videoScript.map((line) => (
                           <li key={line}>• {line}</li>
                         ))}
                       </ul>
                     </div>
                     <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                      <button type="button" className="rounded-full bg-neutral-950 px-5 py-3 text-sm font-black text-white">
+                      <button type="button" className="rounded-full bg-[#14123D] px-5 py-3 text-sm font-black text-white">
                         Subir video
                       </button>
-                      <button type="button" className="rounded-full border border-neutral-300 bg-white px-5 py-3 text-sm font-black text-neutral-900">
+                      <button type="button" className="rounded-full border border-[#D8D6FF] bg-white px-5 py-3 text-sm font-black text-neutral-900">
                         Enviar video por WhatsApp
                       </button>
                     </div>
                   </div>
-                  <div className="rounded-[1.4rem] border border-dashed border-neutral-300 bg-neutral-50 p-6">
+                  <div className="rounded-[1.4rem] border border-dashed border-[#D8D6FF] bg-neutral-50 p-6">
                     <p className="font-black">Documentos sugeridos</p>
-                    <ul className="mt-2 space-y-2 text-sm leading-6 text-neutral-600">
+                    <ul className="mt-2 space-y-2 text-sm leading-6 text-[#5E5A8F]">
                       <li>• Foto de cédula o verificación de identidad.</li>
                       <li>• Fotos de trabajos anteriores.</li>
                       <li>• Certificaciones, recomendaciones o antecedentes.</li>
                     </ul>
-                    <button type="button" className="mt-5 rounded-full border border-neutral-300 bg-white px-5 py-3 text-sm font-black">
+                    <button type="button" className="mt-5 rounded-full border border-[#D8D6FF] bg-white px-5 py-3 text-sm font-black">
                       Adjuntar archivos
                     </button>
                   </div>
@@ -373,17 +373,17 @@ export default function ProfessionalApplicationPage() {
 
               <section>
                 <h3 className="text-2xl font-black">7. Datos bancarios y forma de pago</h3>
-                <p className="mt-2 leading-7 text-neutral-600">
+                <p className="mt-2 leading-7 text-[#5E5A8F]">
                   El prestador no cobra directamente al cliente. La plataforma cobra con tarjeta cuando el profesional confirma llegada a la propiedad y luego paga al prestador por transferencia bancaria, normalmente 24 a 48 horas después de realizado el trabajo.
                 </p>
                 <div className="mt-5 grid gap-4 md:grid-cols-2">
                   <div className="space-y-2">
                     <FieldLabel>Banco</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Banco de Chile, Santander, Estado" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: Banco de Chile, Santander, Estado" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Tipo de cuenta</FieldLabel>
-                    <select className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
+                    <select className="w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950">
                       <option>Cuenta corriente</option>
                       <option>Cuenta vista</option>
                       <option>Cuenta RUT</option>
@@ -391,42 +391,42 @@ export default function ProfessionalApplicationPage() {
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Número de cuenta</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Número de cuenta para transferencia" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Número de cuenta para transferencia" />
                   </div>
                   <div className="space-y-2">
                     <FieldLabel>Nombre titular de la cuenta</FieldLabel>
-                    <input className="w-full rounded-2xl border border-neutral-200 px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Debe coincidir idealmente con el prestador" />
+                    <input className="w-full rounded-2xl border border-[#E7E5FF] px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Debe coincidir idealmente con el prestador" />
                   </div>
                 </div>
-                <div className="mt-5 rounded-2xl bg-neutral-950 p-5 text-sm leading-6 text-white">
+                <div className="mt-5 rounded-2xl bg-[#14123D] p-5 text-sm leading-6 text-white">
                   <p className="font-black">Regla económica para el prestador</p>
-                  <p className="mt-2 text-white/70">El cliente paga con tarjeta dentro de servicios.cl; no se permite recibir pagos externos, efectivo, transferencia directa ni WhatsApp para cerrar por fuera. El pago al prestador se libera por transferencia bancaria luego de cumplir el servicio.</p>
+                  <p className="mt-2 text-white/70">El cliente paga con tarjeta dentro de burro.cl; no se permite recibir pagos externos, efectivo, transferencia directa ni WhatsApp para cerrar por fuera. El pago al prestador se libera por transferencia bancaria luego de cumplir el servicio.</p>
                 </div>
               </section>
 
-              <section className="rounded-[1.7rem] bg-rose-50 p-5 ring-1 ring-rose-100 sm:p-6">
-                <h3 className="text-2xl font-black text-[#d70466]">8. Reglas de plataforma</h3>
-                <div className="mt-4 space-y-3 text-sm font-bold text-neutral-700">
+              <section className="rounded-[1.7rem] bg-[#F1EFFF] p-5 ring-1 ring-rose-100 sm:p-6">
+                <h3 className="text-2xl font-black text-[#3F35F2]">8. Reglas de plataforma</h3>
+                <div className="mt-4 space-y-3 text-sm font-bold text-[#27235F]">
                   <label className="flex gap-3">
-                    <input type="checkbox" className="mt-1 h-4 w-4 accent-[#ff385c]" />
+                    <input type="checkbox" className="mt-1 h-4 w-4 accent-[#3F35F2]" />
                     Acepto que las solicitudes, reservas, pagos y coordinación inicial deben quedar dentro de la plataforma.
                   </label>
                   <label className="flex gap-3">
-                    <input type="checkbox" className="mt-1 h-4 w-4 accent-[#ff385c]" />
+                    <input type="checkbox" className="mt-1 h-4 w-4 accent-[#3F35F2]" />
                     Acepto mantener precios y disponibilidad actualizados.
                   </label>
                   <label className="flex gap-3">
-                    <input type="checkbox" className="mt-1 h-4 w-4 accent-[#ff385c]" />
+                    <input type="checkbox" className="mt-1 h-4 w-4 accent-[#3F35F2]" />
                     Acepto que el perfil será revisado antes de ser publicado y que recibiré pagos por transferencia 24–48 horas después de realizado el trabajo.
                   </label>
                 </div>
               </section>
 
-              <div className="flex flex-col gap-3 border-t border-neutral-200 pt-7 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-sm leading-6 text-neutral-500">
+              <div className="flex flex-col gap-3 border-t border-[#E7E5FF] pt-7 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm leading-6 text-[#7773A8]">
                   En esta versión prototipo el formulario es visual. La siguiente etapa será guardar estos datos en base de datos y crear flujo de aprobación.
                 </p>
-                <button type="button" className="rounded-full bg-[#ff385c] px-7 py-4 font-black text-white transition hover:bg-[#e31c5f]">
+                <button type="button" className="rounded-full bg-[#3F35F2] px-7 py-4 font-black text-white transition hover:bg-[#2F1FEA]">
                   Enviar postulación
                 </button>
               </div>
