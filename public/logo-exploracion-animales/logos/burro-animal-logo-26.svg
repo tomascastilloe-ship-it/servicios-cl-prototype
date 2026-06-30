@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logo 26: Burro animal 26 · cuadrado</title>
+  <desc id="desc">Logo para burro.cl con un burro animal al centro, estilo cuadrado.</desc>
+  <rect width="520" height="360" rx="34" fill="#fffaf2"/>
+  <rect x="18" y="18" width="484" height="324" rx="30" fill="white" stroke="#ead8c2" stroke-width="3"/>
+  <circle cx="260" cy="142" r="112" fill="#fff8ef" stroke="#b86b3a" stroke-width="8"/>
+        <ellipse cx="230" cy="145" rx="83" ry="40" fill="#b86b3a" stroke="#241a14" stroke-width="8"/>
+        <ellipse cx="320" cy="114" rx="39" ry="46" fill="#e45b2d" stroke="#241a14" stroke-width="8" transform="rotate(-7 320 114)"/>
+        <path d="M299 76 L277 22 L316 59 Z" fill="#2f7d5a" stroke="#241a14" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M339 76 L368 23 L365 80 Z" fill="#2f7d5a" stroke="#241a14" stroke-width="7" stroke-linejoin="round"/>
+        <ellipse cx="329" cy="130" rx="25" ry="16" fill="#fff8ef" stroke="#241a14" stroke-width="5"/>
+        <circle cx="334" cy="106" r="5" fill="#241a14"/>
+        <circle cx="345" cy="129" r="3" fill="#241a14"/>
+        <path d="M318 142 Q332 152 351 141" fill="none" stroke="#241a14" stroke-width="5" stroke-linecap="round"/>
+        <rect x="176" y="175" width="17" height="50" rx="9" fill="#241a14"/><rect x="250" y="175" width="17" height="50" rx="9" fill="#241a14"/><rect x="300" y="167" width="17" height="53" rx="9" fill="#241a14"/>
+        <path d="M155 139 Q119 110 108 73" fill="none" stroke="#241a14" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="106" cy="69" r="9" fill="#e45b2d"/>
+        <circle cx="405" cy="70" r="28" fill="#2f7d5a"/><text x="405" y="80" text-anchor="middle" font-family="Arial" font-size="24" font-weight="900" fill="white">+</text>
+  <text x="260" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#241a14" letter-spacing="-1.5">burro.cl</text>
+  <text x="260" y="329" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#b86b3a" letter-spacing="2.5">CUADRADO</text>
+</svg>

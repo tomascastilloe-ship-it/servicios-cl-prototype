@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logo 32: Burro animal 32 · oficio</title>
+  <desc id="desc">Logo para burro.cl con un burro animal al centro, estilo oficio.</desc>
+  <rect width="520" height="360" rx="34" fill="#fffaf2"/>
+  <rect x="18" y="18" width="484" height="324" rx="30" fill="white" stroke="#ead8c2" stroke-width="3"/>
+  <rect x="64" y="42" width="392" height="200" rx="28" fill="#f8efe2" stroke="#8a5b37" stroke-width="8"/><path d="M86 218 Q260 276 434 218" fill="none" stroke="#d96a35" stroke-width="10" stroke-linecap="round"/>
+        <ellipse cx="230" cy="145" rx="97" ry="43" fill="#8a5b37" stroke="#301d13" stroke-width="8"/>
+        <ellipse cx="324" cy="110" rx="39" ry="52" fill="#d96a35" stroke="#301d13" stroke-width="8" transform="rotate(-4 324 110)"/>
+        <path d="M303 72 L281 18 L320 55 Z" fill="#315f46" stroke="#301d13" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M343 72 L372 19 L369 76 Z" fill="#315f46" stroke="#301d13" stroke-width="7" stroke-linejoin="round"/>
+        <ellipse cx="333" cy="126" rx="25" ry="16" fill="#f8efe2" stroke="#301d13" stroke-width="5"/>
+        <circle cx="338" cy="102" r="5" fill="#301d13"/>
+        <circle cx="349" cy="125" r="3" fill="#301d13"/>
+        <path d="M322 138 Q336 148 355 137" fill="none" stroke="#301d13" stroke-width="5" stroke-linecap="round"/>
+        <rect x="176" y="175" width="17" height="50" rx="9" fill="#301d13"/><rect x="250" y="175" width="17" height="50" rx="9" fill="#301d13"/><rect x="300" y="167" width="17" height="53" rx="9" fill="#301d13"/>
+        <path d="M155 139 Q119 110 108 73" fill="none" stroke="#301d13" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="106" cy="69" r="9" fill="#d96a35"/>
+        <circle cx="405" cy="70" r="28" fill="#315f46"/><text x="405" y="80" text-anchor="middle" font-family="Arial" font-size="24" font-weight="900" fill="white">✓</text>
+  <text x="260" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#301d13" letter-spacing="-1.5">burro.cl</text>
+  <text x="260" y="329" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#8a5b37" letter-spacing="2.5">OFICIO</text>
+</svg>

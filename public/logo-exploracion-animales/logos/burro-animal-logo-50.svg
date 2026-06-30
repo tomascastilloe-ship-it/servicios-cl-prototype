@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logo 50: Burro animal 50 · finalista B</title>
+  <desc id="desc">Logo para burro.cl con un burro animal al centro, estilo finalista B.</desc>
+  <rect width="520" height="360" rx="34" fill="#fffaf2"/>
+  <rect x="18" y="18" width="484" height="324" rx="30" fill="white" stroke="#ead8c2" stroke-width="3"/>
+  <circle cx="260" cy="142" r="112" fill="#fffaf2" stroke="#70472e" stroke-width="8"/>
+        <path d="M159 145 C184 100, 274 100, 313 145 C346 180, 255 209, 178 184 C144 174, 138 154, 159 145Z" fill="none" stroke="#20130d" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M308 126 C326 72, 372 72, 388 122 C399 160, 367 186, 333 174" fill="none" stroke="#20130d" stroke-width="14" stroke-linecap="round"/>
+        <path d="M332 76 L314 30 L351 63" fill="none" stroke="#20130d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M369 74 L391 29 L386 82" fill="none" stroke="#20130d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M178 178 V222 M250 186 V225 M300 174 V220" stroke="#20130d" stroke-width="12" stroke-linecap="round"/>
+        <path d="M151 137 L112 108" stroke="#e45b2d" stroke-width="12" stroke-linecap="round"/>
+        <circle cx="360" cy="124" r="5" fill="#e45b2d"/>
+        <path d="M93 205 H430" stroke="#e45b2d" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+  <text x="260" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#20130d" letter-spacing="-1.5">burro.cl</text>
+  <text x="260" y="329" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#70472e" letter-spacing="2.5">FINALISTA B</text>
+</svg>

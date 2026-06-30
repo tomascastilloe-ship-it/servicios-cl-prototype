@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="360" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logo 33: Burro animal 33 · calma</title>
+  <desc id="desc">Logo para burro.cl con un burro animal al centro, estilo calma.</desc>
+  <rect width="520" height="360" rx="34" fill="#fffaf2"/>
+  <rect x="18" y="18" width="484" height="324" rx="30" fill="white" stroke="#ead8c2" stroke-width="3"/>
+  <rect x="42" y="34" width="436" height="216" rx="38" fill="#fff3e3" stroke="#5b3928" stroke-width="8"/>
+        <path d="M159 148 C184 100, 274 100, 313 148 C346 180, 255 209, 178 184 C144 174, 138 154, 159 148Z" fill="none" stroke="#1f1712" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M308 126 C326 72, 372 72, 388 122 C399 160, 367 186, 333 174" fill="none" stroke="#1f1712" stroke-width="14" stroke-linecap="round"/>
+        <path d="M332 76 L314 30 L351 63" fill="none" stroke="#1f1712" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M369 74 L391 29 L386 82" fill="none" stroke="#1f1712" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M178 178 V222 M250 186 V225 M300 174 V220" stroke="#1f1712" stroke-width="12" stroke-linecap="round"/>
+        <path d="M151 137 L112 108" stroke="#f08a4b" stroke-width="12" stroke-linecap="round"/>
+        <circle cx="360" cy="124" r="5" fill="#f08a4b"/>
+        <circle cx="405" cy="70" r="28" fill="#48725d"/><text x="405" y="80" text-anchor="middle" font-family="Arial" font-size="24" font-weight="900" fill="white">⌂</text><path d="M105 82 L260 38 L415 82" fill="none" stroke="#48725d" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="260" y="304" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" fill="#1f1712" letter-spacing="-1.5">burro.cl</text>
+  <text x="260" y="329" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#5b3928" letter-spacing="2.5">CALMA</text>
+</svg>
