@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "burro.cl | Servicios para departamentos",
   description:
     "Burro.cl conecta departamentos con profesionales de confianza, verificados por video, en Ñuñoa y Providencia.",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: "Burro",
+    statusBarStyle: "default",
+  },
+  icons: {
+    icon: "/brand/burro-icon.svg",
+    apple: "/brand/burro-icon.svg",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#3F35F2",
 };
 
 export default function RootLayout({

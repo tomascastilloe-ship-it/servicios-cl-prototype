@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 
+const whatsappVideoHref =
+  "https://wa.me/?text=" +
+  encodeURIComponent(
+    "Hola Burro, quiero enviar mi video de presentación para postular como profesional. Mi nombre es: "
+  );
+
+
 const serviceOptions = [
   "Maestro multifunción / mantención general",
   "Electricidad menor",
@@ -349,13 +356,22 @@ export default function ProfessionalApplicationPage() {
                       </ul>
                     </div>
                     <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                      <button type="button" className="rounded-full bg-[#14123D] px-5 py-3 text-sm font-black text-white">
+                      <label className="cursor-pointer rounded-full bg-[#14123D] px-5 py-3 text-center text-sm font-black text-white transition hover:bg-[#27235F]">
+                        <input className="sr-only" type="file" accept="video/*" />
                         Subir video
-                      </button>
-                      <button type="button" className="rounded-full border border-[#D8D6FF] bg-white px-5 py-3 text-sm font-black text-neutral-900">
+                      </label>
+                      <a
+                        href={whatsappVideoHref}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-full border border-[#D8D6FF] bg-white px-5 py-3 text-center text-sm font-black text-neutral-900 transition hover:border-[#3F35F2]"
+                      >
                         Enviar video por WhatsApp
-                      </button>
+                      </a>
                     </div>
+                    <p className="mt-3 text-xs leading-5 text-[#7773A8]">
+                      En iPhone o Android, “Subir video” abre la galería/cámara. WhatsApp abre un mensaje listo para adjuntar el video.
+                    </p>
                   </div>
                   <div className="rounded-[1.4rem] border border-dashed border-[#D8D6FF] bg-neutral-50 p-6">
                     <p className="font-black">Documentos sugeridos</p>
@@ -364,9 +380,10 @@ export default function ProfessionalApplicationPage() {
                       <li>• Fotos de trabajos anteriores.</li>
                       <li>• Certificaciones, recomendaciones o antecedentes.</li>
                     </ul>
-                    <button type="button" className="mt-5 rounded-full border border-[#D8D6FF] bg-white px-5 py-3 text-sm font-black">
+                    <label className="mt-5 inline-flex cursor-pointer rounded-full border border-[#D8D6FF] bg-white px-5 py-3 text-sm font-black transition hover:border-[#3F35F2]">
+                      <input className="sr-only" type="file" multiple accept="image/*,.pdf" />
                       Adjuntar archivos
-                    </button>
+                    </label>
                   </div>
                 </div>
               </section>

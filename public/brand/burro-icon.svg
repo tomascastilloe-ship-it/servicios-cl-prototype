@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="burro icon">
+  <rect width="512" height="512" rx="118" fill="#F1EFFF"/>
+  <g transform="translate(68 48) scale(1.15)">
+    <ellipse cx="160" cy="220" rx="116" ry="126" fill="#3F35F2"/>
+    <path d="M86 103C34 4 58-22 135 82" fill="#4F46FF"/>
+    <path d="M234 103C286 4 262-22 185 82" fill="#4F46FF"/>
+    <path d="M107 84C76 23 90 19 128 80" fill="none" stroke="#fff7f1" stroke-width="17" stroke-linecap="round"/>
+    <path d="M213 84C244 23 230 19 192 80" fill="none" stroke="#fff7f1" stroke-width="17" stroke-linecap="round"/>
+    <ellipse cx="160" cy="248" rx="88" ry="68" fill="#fff7f1"/>
+    <ellipse cx="126" cy="225" rx="11" ry="17" fill="#160070"/>
+    <ellipse cx="194" cy="225" rx="11" ry="17" fill="#160070"/>
+    <path d="M111 177Q126 158 141 177" fill="none" stroke="#160070" stroke-width="12" stroke-linecap="round"/>
+    <path d="M179 177Q194 158 209 177" fill="none" stroke="#160070" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="138" cy="249" r="7" fill="#160070"/>
+    <circle cx="182" cy="249" r="7" fill="#160070"/>
+    <path d="M116 275Q160 312 204 275" fill="none" stroke="#160070" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>
