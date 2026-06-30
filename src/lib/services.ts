@@ -42,7 +42,7 @@ export const services: Service[] = [
       "Revisión, reparación e instalación eléctrica para departamentos. Ideal para enchufes, luminarias, tableros, automáticos y problemas de corto circuito.",
     includes: ["Diagnóstico en domicilio", "Reparaciones menores", "Instalación de luminarias", "Revisión de seguridad"],
     availability: ["Hoy 18:00", "Mañana 09:30", "Mañana 16:00"],
-    gradient: "from-amber-200 via-orange-100 to-white",
+    gradient: "from-[#f6c46b] via-[#f6dcc0] to-white",
   },
   {
     slug: "limpieza-vidrios-claudia-rojas",
@@ -59,7 +59,7 @@ export const services: Service[] = [
       "Limpieza detallada de vidrios, ventanales, marcos y terrazas. Servicio pensado para departamentos con ventanales grandes y terminación prolija.",
     includes: ["Vidrios interiores", "Vidrios exteriores accesibles", "Marcos y rieles", "Terminación sin manchas"],
     availability: ["Hoy 17:30", "Mañana 11:00", "Viernes 10:00"],
-    gradient: "from-sky-200 via-cyan-100 to-white",
+    gradient: "from-[#9ed4cf] via-[#dff2ea] to-white",
   },
   {
     slug: "aseo-profundo-casalista",
@@ -76,7 +76,7 @@ export const services: Service[] = [
       "Aseo profundo para dejar el departamento listo para vivir, arrendar o entregar. Incluye cocina, baños, pisos, polvo, superficies y detalles visibles.",
     includes: ["Cocina y baños", "Pisos y superficies", "Interior de muebles vacíos", "Retiro de polvo acumulado"],
     availability: ["Mañana 08:30", "Jueves 15:00", "Sábado 09:00"],
-    gradient: "from-emerald-200 via-lime-100 to-white",
+    gradient: "from-[#9acb9f] via-[#e6f2d7] to-white",
   },
   {
     slug: "limpieza-colchones-tapices-pro",
@@ -93,7 +93,7 @@ export const services: Service[] = [
       "Limpieza con máquina de extracción para colchones, sillones y tapices. Ayuda a remover manchas, ácaros, olores y suciedad acumulada.",
     includes: ["Aspirado profundo", "Aplicación de producto", "Extracción de suciedad", "Recomendaciones de secado"],
     availability: ["Hoy 19:00", "Mañana 13:00", "Viernes 17:00"],
-    gradient: "from-violet-200 via-fuchsia-100 to-white",
+    gradient: "from-[#c7a68f] via-[#f4ded0] to-white",
   },
   {
     slug: "paseo-perros-daniela-morales",
@@ -110,7 +110,7 @@ export const services: Service[] = [
       "Paseos programados para perros que viven en departamento. Servicio por bloques, con confirmación de salida y llegada.",
     includes: ["Paseo 45 minutos", "Agua durante ruta", "Reporte al dueño", "Retiro y entrega en conserjería"],
     availability: ["Hoy 16:00", "Mañana 07:30", "Mañana 18:30"],
-    gradient: "from-rose-200 via-pink-100 to-white",
+    gradient: "from-[#eaa389] via-[#ffe0d0] to-white",
   },
   {
     slug: "lavado-autos-estacionamiento",
@@ -127,7 +127,7 @@ export const services: Service[] = [
       "Limpieza exterior e interior de autos directamente en el estacionamiento del edificio, con bajo uso de agua y productos adecuados.",
     includes: ["Limpieza exterior", "Aspirado interior", "Tablero y detalles", "Vidrios interiores"],
     availability: ["Mañana 10:00", "Jueves 12:00", "Sábado 11:30"],
-    gradient: "from-neutral-200 via-slate-100 to-white",
+    gradient: "from-[#d3b89d] via-[#efe3d5] to-white",
   },
 ];
 

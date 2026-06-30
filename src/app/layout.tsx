@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "servicios.cl | Servicios para departamentos",
+  title: "burro.cl | Servicios para departamentos",
   description:
-    "Marketplace de servicios para departamentos en Ñuñoa y Providencia, con profesionales verificados por video.",
+    "Burro.cl conecta departamentos con profesionales de confianza, verificados por video, en Ñuñoa y Providencia.",
 };
 
 export default function RootLayout({
