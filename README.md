@@ -1,10 +1,10 @@
-# servicios.cl — Prototipo inicial
+# burro.cl — Prototipo inicial
 
 Marketplace de servicios para departamentos en Ñuñoa y Providencia, inspirado en una experiencia tipo Airbnb, pero con identidad propia.
 
 ## Qué incluye este prototipo
 
-- Home responsive para `servicios.cl`.
+- Home responsive para `burro.cl`.
 - Buscador principal por servicio, comuna y fecha.
 - Categorías de servicios.
 - Página `/servicios` con listado y filtros visuales.
@@ -16,7 +16,7 @@ Marketplace de servicios para departamentos en Ñuñoa y Providencia, inspirado 
 ## Decisiones confirmadas
 
 - Comunas iniciales: Ñuñoa y Providencia.
-- Nombre temporal: servicios.cl.
+- Nombre temporal: burro.cl.
 - Negocio independiente de Propiedades Castillo Asociados SpA.
 - Pago: cuando el profesional llega al domicilio.
 - Precios: definidos por cada profesional.
@@ -30,7 +30,7 @@ Marketplace de servicios para departamentos en Ñuñoa y Providencia, inspirado 
 3. El profesional revisa la solicitud, confirma honorario y propone/acepta horario.
 4. Antes del match, la plataforma bloquea teléfonos, correos, WhatsApp, Instagram y datos externos.
 5. Cuando ambas partes aceptan honorario y disponibilidad, queda el match confirmado.
-6. La comunicación de detalles finales sigue dentro del chat interno de servicios.cl.
+6. La comunicación de detalles finales sigue dentro del chat interno de burro.cl.
 
 ## Ejecutar localmente
 

@@ -1,6 +1,6 @@
-# servicios.cl — Guía de video para prestadores y base de marketing
+# burro.cl — Guía de video para prestadores y base de marketing
 
-Documento de trabajo para avanzar rápido con los primeros prestadores de servicios.cl:
+Documento de trabajo para avanzar rápido con los primeros prestadores de burro.cl:
 
 - 1 maestro multifunción / mantención hogar.
 - 2 personas que pasean perros.
@@ -96,7 +96,7 @@ Debe decir:
 
 Debe cerrar con algo simple:
 
-> “Si necesitas este servicio, puedes reservarme por servicios.cl. Ahí coordinamos horario, detalles y pago de forma segura.”
+> “Si necesitas este servicio, puedes reservarme por burro.cl. Ahí coordinamos horario, detalles y pago de forma segura.”
 
 ---
 
@@ -108,7 +108,7 @@ Debe cerrar con algo simple:
 >
 > También puedo ayudar a preparar un departamento antes de arrendarlo o venderlo, revisando detalles chicos que hacen que se vea mejor.
 >
-> Mi forma de trabajar es clara: reviso el problema, explico lo que hay que hacer y aviso el valor antes de comenzar. Puedes reservarme por servicios.cl para coordinar horario y servicio de forma segura.
+> Mi forma de trabajar es clara: reviso el problema, explico lo que hay que hacer y aviso el valor antes de comenzar. Puedes reservarme por burro.cl para coordinar horario y servicio de forma segura.
 
 ---
 
@@ -120,7 +120,7 @@ Debe cerrar con algo simple:
 >
 > Me preocupo de la seguridad, de usar correa, respetar el ritmo del perro y avisar si noto algo raro durante el paseo.
 >
-> Si necesitas apoyo con tu perro, puedes reservarme por servicios.cl y coordinamos horario, dirección y detalles por la plataforma.
+> Si necesitas apoyo con tu perro, puedes reservarme por burro.cl y coordinamos horario, dirección y detalles por la plataforma.
 
 ---
 
@@ -134,14 +134,14 @@ Debe cerrar con algo simple:
 - [ ] Da ejemplos concretos.
 - [ ] Menciona experiencia.
 - [ ] No comparte teléfono personal dentro del video.
-- [ ] No invita a cerrar por fuera de servicios.cl.
+- [ ] No invita a cerrar por fuera de burro.cl.
 - [ ] El tono es amable y confiable.
 
 ---
 
 ## 6. Mensaje WhatsApp para pedir el video
 
-Hola, necesitamos que nos mandes un video vertical de mínimo 1 minuto para tu perfil en servicios.cl.
+Hola, necesitamos que nos mandes un video vertical de mínimo 1 minuto para tu perfil en burro.cl.
 
 Grábalo con tu celular, con buena luz y tratando de que no haya ruido.
 
@@ -157,13 +157,13 @@ En el video responde esto, en palabras simples:
 
 No tiene que ser perfecto. Lo importante es que se entienda, que se vea tu cara y que hables con confianza.
 
-Por favor no digas tu teléfono en el video, porque toda la coordinación debe hacerse por servicios.cl.
+Por favor no digas tu teléfono en el video, porque toda la coordinación debe hacerse por burro.cl.
 
 ---
 
 ## 7. Reglas de comunicación tipo Airbnb
 
-La única comunicación permitida antes del match debe ser dentro de servicios.cl:
+La única comunicación permitida antes del match debe ser dentro de burro.cl:
 
 - Chat de texto.
 - Mensaje de voz convertido a texto.
@@ -188,7 +188,7 @@ Sistema recomendado:
 
 Mensaje de advertencia sugerido:
 
-> Por seguridad, no está permitido compartir teléfonos, WhatsApp, correos ni datos externos antes de confirmar la reserva. Puedes hacer todas tus preguntas por este chat. Si prefieres hablar, envía un audio y servicios.cl lo convertirá a texto.
+> Por seguridad, no está permitido compartir teléfonos, WhatsApp, correos ni datos externos antes de confirmar la reserva. Puedes hacer todas tus preguntas por este chat. Si prefieres hablar, envía un audio y burro.cl lo convertirá a texto.
 
 ---
 
@@ -220,7 +220,7 @@ Pregunta abierta:
 
 Pregunta abierta:
 
-> ¿Hubo algún problema o algo que servicios.cl deba saber?
+> ¿Hubo algún problema o algo que burro.cl deba saber?
 
 ---
 
@@ -260,17 +260,17 @@ Fuentes legales recomendadas para estudiar antes de producir campañas:
    - Tema: comportamiento de consumidores, video, marketing y medición.
    - Link: https://www.thinkwithgoogle.com/
 
-Próximo paso: bajar/guardar recursos legales disponibles en PDF y seleccionar al menos 6 videos largos de YouTube, idealmente de más de 20 minutos, para resumirlos y convertirlos en una pauta práctica para servicios.cl.
+Próximo paso: bajar/guardar recursos legales disponibles en PDF y seleccionar al menos 6 videos largos de YouTube, idealmente de más de 20 minutos, para resumirlos y convertirlos en una pauta práctica para burro.cl.
 
 ---
 
-## 10. Pauta creativa inicial para servicios.cl
+## 10. Pauta creativa inicial para burro.cl
 
 Para clientes:
 
 - “Soluciona mantenciones de tu departamento sin perseguir maestros por WhatsApp.”
 - “Profesionales con video, agenda y pago seguro.”
-- “Reserva, confirma y paga dentro de servicios.cl.”
+- “Reserva, confirma y paga dentro de burro.cl.”
 
 Para prestadores:
 

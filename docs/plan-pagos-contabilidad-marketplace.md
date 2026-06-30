@@ -1,10 +1,10 @@
-# servicios.cl — Plan de pagos, validación de visita y contabilidad
+# burro.cl — Plan de pagos, validación de visita y contabilidad
 
 > Documento de trabajo para diseño de producto, integración de pagos y validación contable. No reemplaza revisión de contador/abogado tributario. Debe validarse antes de operar con clientes reales.
 
 ## 1. Objetivo del flujo económico
 
-servicios.cl funcionará como plataforma/intermediario entre clientes y prestadores de servicios para departamentos.
+burro.cl funcionará como plataforma/intermediario entre clientes y prestadores de servicios para departamentos.
 
 La lógica definida por Tomás:
 
@@ -23,7 +23,7 @@ La lógica definida por Tomás:
 
 ### Etapa A — Descubrimiento
 
-- Cliente entra a servicios.cl.
+- Cliente entra a burro.cl.
 - Filtra por comuna, categoría, precio, disponibilidad, evaluación y video.
 - Revisa perfil del profesional.
 
@@ -86,15 +86,15 @@ No se recomienda operar con WhatsApp personal ni automatizaciones informales, po
 
 #### Al maestro
 
-“Hola [Nombre], tienes una visita agendada por servicios.cl en [comuna/dirección parcial] a las [hora]. Cuando estés en la propiedad responde **SI LLEGUE** para confirmar tu llegada.”
+“Hola [Nombre], tienes una visita agendada por burro.cl en [comuna/dirección parcial] a las [hora]. Cuando estés en la propiedad responde **SI LLEGUE** para confirmar tu llegada.”
 
 #### Al cliente
 
-“Hola [Nombre], servicios.cl necesita confirmar la llegada del profesional [Nombre]. ¿El profesional ya se presentó en la propiedad? Responde **SI** para confirmar.”
+“Hola [Nombre], burro.cl necesita confirmar la llegada del profesional [Nombre]. ¿El profesional ya se presentó en la propiedad? Responde **SI** para confirmar.”
 
 #### Al confirmar ambos
 
-“Confirmación recibida. Se activará el cobro de la visita/servicio según las condiciones aceptadas en servicios.cl.”
+“Confirmación recibida. Se activará el cobro de la visita/servicio según las condiciones aceptadas en burro.cl.”
 
 ## 4. Integraciones de pago a evaluar
 
@@ -119,7 +119,7 @@ Puntos a validar:
 - Cómo manejar tokenización de tarjeta y cargos posteriores.
 - Comisiones, abonos, conciliación y tiempos de liquidación.
 
-Uso probable en servicios.cl:
+Uso probable en burro.cl:
 
 - MVP inicial: Webpay Plus para pago puntual de una reserva.
 - Fase 2: Oneclick para guardar tarjeta y cobrar/capturar cuando se confirme llegada.
@@ -146,7 +146,7 @@ Puntos a validar:
 - Si permite retención/autorización y captura posterior como se requiere.
 - Cómo funciona la liberación de fondos y retiro.
 
-Uso probable en servicios.cl:
+Uso probable en burro.cl:
 
 - Buen candidato para MVP si permite tokenización/cobro simple y reportes.
 - Evaluar split si los prestadores tendrán cuentas propias o si la plataforma paga después manualmente por transferencia.
@@ -173,7 +173,7 @@ Puntos a validar:
 - Soporte local en Chile.
 - Complejidad técnica versus MVP.
 
-Uso probable en servicios.cl:
+Uso probable en burro.cl:
 
 - Muy buen candidato para fase avanzada si necesitamos autorización/captura real y control de cobros.
 
@@ -196,7 +196,7 @@ Puntos a validar:
 - Moneda, bancos, impuestos y payouts en Chile.
 - Requisitos de Stripe Connect para prestadores locales.
 
-Uso probable en servicios.cl:
+Uso probable en burro.cl:
 
 - Ideal técnicamente si está disponible y aprobado para Chile, pero no asumir sin validación comercial.
 
@@ -253,7 +253,7 @@ Debe validarlo un contador chileno antes de lanzar.
 
 ### Pregunta clave
 
-¿servicios.cl vende el servicio completo al cliente y luego subcontrata/paga al maestro, o servicios.cl solo intermedia y cobra una comisión?
+¿burro.cl vende el servicio completo al cliente y luego subcontrata/paga al maestro, o burro.cl solo intermedia y cobra una comisión?
 
 Esto cambia:
 
@@ -265,10 +265,10 @@ Esto cambia:
 
 ### Modelo A — Plataforma como vendedora del servicio
 
-- Cliente paga a servicios.cl.
-- servicios.cl emite boleta/factura al cliente por el servicio.
-- servicios.cl paga al maestro como proveedor/subcontratista.
-- Maestro emite boleta/factura a servicios.cl.
+- Cliente paga a burro.cl.
+- burro.cl emite boleta/factura al cliente por el servicio.
+- burro.cl paga al maestro como proveedor/subcontratista.
+- Maestro emite boleta/factura a burro.cl.
 
 Ventaja:
 
@@ -305,7 +305,7 @@ Para el piloto del primer maestro:
 - Registrar pago y visita.
 - Pagar al maestro por transferencia manual 24–48 horas después.
 - Definir con contador si el documento tributario inicial será:
-  - boleta/factura de servicios.cl al cliente por total, y documento del maestro a servicios.cl; o
+  - boleta/factura de burro.cl al cliente por total, y documento del maestro a burro.cl; o
   - documento del maestro más comisión de plataforma.
 
 ## 8. Datos que debe pedir la ficha del prestador
@@ -430,7 +430,7 @@ Antes de programar pagos reales hay que decidir:
 
 1. ¿Partimos MVP con Transbank Webpay Plus o Mercado Pago?
 2. ¿El cliente paga una visita base fija o un monto variable confirmado por el maestro?
-3. ¿servicios.cl emitirá documento tributario por el total o solo comisión?
+3. ¿burro.cl emitirá documento tributario por el total o solo comisión?
 4. ¿El primer piloto será manual/semi-manual o 100% automático?
 
 Recomendación: partir con MVP semi-manual, pago seguro online y transferencia manual al maestro, mientras contador define el modelo tributario definitivo.

@@ -1,9 +1,9 @@
-# servicios.cl — Reglas económicas y mensajes para marketing
+# burro.cl — Reglas económicas y mensajes para marketing
 
-Este documento separa el proyecto **servicios.cl** de **Propiedades Castillo Asociados SpA**.
+Este documento separa el proyecto **burro.cl** de **Propiedades Castillo Asociados SpA**.
 
 - **Propiedades Castillo Asociados SpA**: corredora inmobiliaria de Tomás, captación, propiedades, clientes compradores/vendedores, informes y correos comerciales.
-- **servicios.cl**: proyecto nuevo e independiente, tipo marketplace/app, para conectar clientes de departamentos con prestadores de servicios.
+- **burro.cl**: proyecto nuevo e independiente, tipo marketplace/app, para conectar clientes de departamentos con prestadores de servicios.
 
 ## Modelo económico definido
 
@@ -27,7 +27,7 @@ Transbank tiene productos relevantes para este flujo:
 - **Oneclick / Oneclick Mall**: permite inscripción de tarjeta para pagos futuros. Transbank indica que los datos de la tarjeta quedan almacenados de forma segura en Transbank y no son conocidos por el comercio.
 - **Transacción Completa**: integración más avanzada para cobro con tarjeta dentro de un flujo más controlado.
 
-Conclusión: para servicios.cl conviene evaluar **Transbank con captura diferida** y, más adelante, **Oneclick** para usuarios recurrentes/app.
+Conclusión: para burro.cl conviene evaluar **Transbank con captura diferida** y, más adelante, **Oneclick** para usuarios recurrentes/app.
 
 ### Opción alternativa: Mercado Pago
 
@@ -37,7 +37,7 @@ Mercado Pago tiene Checkout Pro, Checkout API, webhooks, reembolsos/cancelacione
 - Costos/comisiones.
 - Plazos de disponibilidad de dinero.
 - Facilidad para pagos recurrentes o tarjetas guardadas.
-- Cómo manejar marketplace/prestadores si el dinero entra primero a servicios.cl.
+- Cómo manejar marketplace/prestadores si el dinero entra primero a burro.cl.
 
 ### Stripe
 
@@ -45,22 +45,22 @@ Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual
 
 ## Regla de comunicación interna tipo Airbnb
 
-- Antes del match, la única forma de comunicación entre cliente y prestador es el chat interno de servicios.cl.
+- Antes del match, la única forma de comunicación entre cliente y prestador es el chat interno de burro.cl.
 - El usuario puede hacer preguntas sobre trabajos, disponibilidad, precio estimado y experiencia del maestro, pero no puede pedir ni enviar datos de contacto.
 - Se deben bloquear automáticamente teléfonos, WhatsApp, correos, Instagram, direcciones externas o cualquier intento de cerrar el negocio por fuera.
 - Si se detecta un dato prohibido, el mensaje no se envía y aparece una “tarjeta amarilla” o warning:
-  - “No está permitido compartir teléfonos o cerrar por fuera. Todo debe coordinarse y pagarse dentro de servicios.cl.”
+  - “No está permitido compartir teléfonos o cerrar por fuera. Todo debe coordinarse y pagarse dentro de burro.cl.”
 - Si el usuario insiste, queda registro del intento, se escala a revisión interna y puede suspenderse o expulsarse de la plataforma.
 - Los mensajes de voz son permitidos, pero deben transformarse a texto antes de llegar al chat. Ese texto pasa por el mismo filtro anti-contacto.
 - Esta regla aplica a clientes y prestadores, especialmente para evitar que clientes intenten evitar el pago con tarjeta.
 
-## Flujo operativo tipo Airbnb para servicios.cl
+## Flujo operativo tipo Airbnb para burro.cl
 
 1. Cliente revisa servicios y profesionales.
 2. Cliente revisa video, precio, reseñas y disponibilidad.
 3. Cliente consulta dudas por chat interno o audio transcrito, sin compartir teléfonos ni datos externos.
 4. Cliente solicita match/reserva.
-5. Plataforma registra tarjeta de forma segura mediante pasarela externa certificada; servicios.cl no almacena números de tarjeta.
+5. Plataforma registra tarjeta de forma segura mediante pasarela externa certificada; burro.cl no almacena números de tarjeta.
 6. Prestador acepta horario y valor estimado.
 7. Al llegar a la propiedad, la app/WhatsApp envía confirmación automática:
    - Al maestro: “¿Ya llegaste a la propiedad?”
@@ -72,10 +72,10 @@ Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual
 
 ## Pendientes contables/legales a resolver
 
-- Definir si servicios.cl será una empresa separada de Propiedades Castillo.
+- Definir si burro.cl será una empresa separada de Propiedades Castillo.
 - Definir giro comercial ante SII.
-- Definir si servicios.cl emite boleta/factura al cliente por la comisión/plataforma o por el total del servicio.
-- Definir si el prestador debe emitir boleta/factura a servicios.cl o al cliente final.
+- Definir si burro.cl emite boleta/factura al cliente por la comisión/plataforma o por el total del servicio.
+- Definir si el prestador debe emitir boleta/factura a burro.cl o al cliente final.
 - Definir tratamiento de IVA, retenciones y comisión de plataforma.
 - Definir términos y condiciones: pago por visita, cancelaciones, no presentación, reclamos, reembolsos y servicio no ejecutado.
 - Revisar con contador/abogado el modelo antes de producción real.
@@ -86,11 +86,11 @@ Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual
 
 ## Mensaje para prestadores
 
-“Recibe solicitudes ordenadas, agenda tus horarios y trabaja con pagos gestionados por la plataforma. El cliente paga dentro de servicios.cl y tú recibes transferencia bancaria 24 a 48 horas después de realizar el trabajo.”
+“Recibe solicitudes ordenadas, agenda tus horarios y trabaja con pagos gestionados por la plataforma. El cliente paga dentro de burro.cl y tú recibes transferencia bancaria 24 a 48 horas después de realizar el trabajo.”
 
 ## Regla de chat y comunicación tipo Airbnb
 
-- Antes del match/pago, cliente y maestro solo pueden comunicarse por el chat interno de servicios.cl.
+- Antes del match/pago, cliente y maestro solo pueden comunicarse por el chat interno de burro.cl.
 - No se permite compartir teléfonos, WhatsApp, correos, Instagram ni datos para cerrar por fuera.
 - Si el sistema detecta un teléfono, correo o intento de contacto externo, el mensaje se bloquea y no llega al otro usuario.
 - El usuario recibe una “tarjeta amarilla” o warning claro: “No está permitido cerrar por fuera. Todo debe hacerse por la plataforma”.
@@ -130,22 +130,22 @@ Stripe tiene un flujo muy bueno técnicamente para marketplaces y captura manual
 
 ## Guion base corto para video comercial
 
-“¿Necesitas arreglar algo en tu departamento? En servicios.cl encuentras profesionales verificados, con video de presentación, agenda disponible y pago seguro dentro de la plataforma. El profesional confirma su llegada, tú pagas con tarjeta y todo queda coordinado de forma simple y ordenada.”
+“¿Necesitas arreglar algo en tu departamento? En burro.cl encuentras profesionales verificados, con video de presentación, agenda disponible y pago seguro dentro de la plataforma. El profesional confirma su llegada, tú pagas con tarjeta y todo queda coordinado de forma simple y ordenada.”
 
 ## Guion base para captar prestadores
 
-“Si haces mantenciones, reparaciones o servicios para departamentos, servicios.cl te ayuda a recibir solicitudes ordenadas, mostrar tu experiencia en video, manejar tu agenda y recibir pagos por transferencia después de realizar el trabajo.”
+“Si haces mantenciones, reparaciones o servicios para departamentos, burro.cl te ayuda a recibir solicitudes ordenadas, mostrar tu experiencia en video, manejar tu agenda y recibir pagos por transferencia después de realizar el trabajo.”
 
 ## Regla de comunicación
 
 No mezclar marcas sin definir estrategia:
 
 - Propiedades Castillo puede ser respaldo operativo o canal de confianza.
-- servicios.cl debe construirse como marca independiente de servicios para departamentos.
+- burro.cl debe construirse como marca independiente de servicios para departamentos.
 
 ## Chat interno protegido y bloqueo anti-contacto externo
 
-- La comunicación cliente/maestro debe ocurrir dentro del chat de servicios.cl, similar al modelo de Airbnb.
+- La comunicación cliente/maestro debe ocurrir dentro del chat de burro.cl, similar al modelo de Airbnb.
 - Antes del match o antes del pago no se pueden compartir teléfonos, WhatsApp, correos, Instagram, direcciones externas ni instrucciones para pagar por fuera.
 - Si el sistema detecta números de teléfono, correos o frases como “págame por fuera”, el mensaje no debe llegar al destinatario.
 - El usuario recibe una advertencia tipo tarjeta amarilla: “Por seguridad, no está permitido compartir datos de contacto ni coordinar pagos por fuera. Usa este chat para tus preguntas.”
@@ -172,13 +172,13 @@ Estas evaluaciones deben servir para reputación, ranking, prevención de malos 
 
 ## Chat protegido y moderación
 
-- La comunicación entre cliente y maestro debe ocurrir dentro de servicios.cl, igual que en plataformas tipo Airbnb.
+- La comunicación entre cliente y maestro debe ocurrir dentro de burro.cl, igual que en plataformas tipo Airbnb.
 - Antes del match está prohibido compartir teléfonos, correos, WhatsApp, Instagram u otros datos externos.
 - Si el sistema detecta números o contacto externo, el mensaje se cancela antes de llegar.
 - Primer intento: tarjeta amarilla / warning educativo.
 - Reincidencia: suspensión o expulsión de la plataforma.
 - Los mensajes de voz deben transformarse a texto para revisión automática antes de enviarse al chat.
-- El texto de advertencia debe explicar: “Para proteger a ambos, toda coordinación y pago debe hacerse dentro de servicios.cl”.
+- El texto de advertencia debe explicar: “Para proteger a ambos, toda coordinación y pago debe hacerse dentro de burro.cl”.
 
 ## Evaluaciones
 
