@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300" role="img" aria-label="Burro ruta">
+<title>Burro ruta</title>
+
+        <rect width="520" height="300" rx="30" fill="#fffaf2"/>
+        <rect x="62" y="62" width="128" height="128" rx="32" fill="#241a14"/>
+        <g transform="translate(46 46) scale(.9)">
+        <rect x="27" y="31" width="106" height="98" rx="24" fill="#fff8ef"/>
+        <path d="M51 44V23M109 44V23" stroke="#e45b2d" stroke-width="15" stroke-linecap="round"/>
+        <path d="M55 82l15 15 37-39" stroke="#241a14" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <text x="80" y="121" text-anchor="middle" font-family="Arial" font-weight="900" font-size="26" fill="#241a14">OK</text></g>
+        <text x="225" y="130" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="900" fill="#e45b2d">burro</text>
+        <text x="228" y="169" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="900" letter-spacing="3" fill="#241a14">RESERVA SIMPLE</text>
+</svg>
