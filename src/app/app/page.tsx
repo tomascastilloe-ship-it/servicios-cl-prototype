@@ -51,7 +51,7 @@ export default function AppPrototypePage() {
           <div>
             <p className="text-sm font-black uppercase tracking-[0.2em] text-[#ff385c]">App conectada a la web</p>
             <h1 className="mt-3 text-4xl font-black tracking-[-0.04em] sm:text-6xl">
-              servicios.cl funcionará como web y app en línea.
+              burro.cl funcionará como web y app en línea.
             </h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-neutral-600">
               La página web y la app deben compartir los mismos datos: perfiles, videos, agenda, reservas, chat, confirmaciones, pagos y estado del servicio. Lo que ocurra en un canal debe verse actualizado en el otro.
@@ -73,7 +73,7 @@ export default function AppPrototypePage() {
             <div className="overflow-hidden rounded-[2.4rem] bg-white">
               <div className="bg-neutral-950 px-5 py-5 text-white">
                 <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-white/25" />
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-rose-200">servicios.cl app</p>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-rose-200">burro.cl app</p>
                 <h2 className="mt-2 text-2xl font-black">Reserva activa</h2>
               </div>
               <div className="space-y-4 p-5">
@@ -169,7 +169,7 @@ export default function AppPrototypePage() {
 
         <section className="mt-8 rounded-[2rem] bg-neutral-950 p-6 text-white shadow-xl sm:p-8">
           <p className="text-sm font-black uppercase tracking-[0.2em] text-rose-200">Reglas del chat interno</p>
-          <h2 className="mt-2 text-3xl font-black tracking-tight">Todo se conversa dentro de servicios.cl.</h2>
+          <h2 className="mt-2 text-3xl font-black tracking-tight">Todo se conversa dentro de burro.cl.</h2>
           <p className="mt-3 max-w-4xl leading-7 text-white/70">
             Igual que en plataformas tipo Airbnb, la comunicación previa debe quedar dentro de la app/web. El sistema revisa mensajes escritos y audios transcritos para evitar teléfonos, WhatsApp, correos o intentos de cerrar por fuera.
           </p>
