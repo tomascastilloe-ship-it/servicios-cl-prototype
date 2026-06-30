@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 520 360" role="img" aria-labelledby="title desc">
+<title id="title">Logo burro.cl sello 14</title>
+<desc id="desc">Logo estilo sello con burro animal al centro, cordillera y cinta burro.cl. Variante cordillera.</desc>
+<rect width="520" height="360" rx="22" fill="#ffffff"/>
+<g>
+  <circle cx="260" cy="180" r="153" fill="#fff8ef" stroke="#241a14" stroke-width="15"/><circle cx="260" cy="180" r="130" fill="none" stroke="#5b3928" stroke-width="4" opacity=".8"/>
+  
+  
+        <path d="M82 178 H154 M95 200 H191 M350 178 H437 M329 201 H452" stroke="#9c826c" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+        
+  
+  
+    <g transform="translate(2,0)">
+      <path d="M221 124 C199 78 210 45 233 31 C249 70 248 104 232 134 Z" fill="#fff8ef" stroke="#241a14" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M230 111 C219 78 221 59 232 48" fill="none" stroke="#241a14" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+      <path d="M292 119 C315 74 306 41 281 28 C263 67 264 103 280 134 Z" fill="#fff8ef" stroke="#241a14" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M282 109 C294 75 292 57 282 46" fill="none" stroke="#241a14" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+      
+        <path d="M206 116 C193 159 203 221 246 247 C283 270 334 241 335 195 C336 142 295 107 255 112 C235 114 216 103 206 116Z" fill="#241a14"/>
+        <path d="M242 225 C270 205 313 207 335 229 C323 252 287 266 255 251 C246 247 241 238 242 225Z" fill="#fff8ef"/>
+        
+      <path d="M214 126 l-14 8 l12 7" fill="#241a14" /><path d="M221 133 l-18 10 l16 7" fill="#241a14" /><path d="M228 140 l-14 12 l12 7" fill="#241a14" /><path d="M235 147 l-18 14 l16 7" fill="#241a14" /><path d="M242 154 l-14 16 l12 7" fill="#241a14" /><path d="M249 161 l-18 18 l16 7" fill="#241a14" /><path d="M256 168 l-14 20 l12 7" fill="#241a14" />
+      <path d="M241 170 C258 152 279 152 293 170" fill="none" stroke="#fff8ef" stroke-width="7" stroke-linecap="round"/>
+      <path d="M258 176 C264 169 273 169 280 176" fill="none" stroke="#fff8ef" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+      <ellipse cx="292" cy="184" rx="10" ry="13" fill="#fff8ef" opacity=".9"/>
+      <circle cx="294" cy="182" r="4" fill="#241a14"/>
+      <circle cx="309" cy="226" r="4" fill="#241a14"/>
+      <path d="M286 239 Q306 252 326 237" fill="none" stroke="#241a14" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    
+  <path d="M69 216 H451 L474 260 H46 Z" fill="#241a14" stroke="#fff8ef" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M73 216 H447" stroke="#5b3928" stroke-width="4" opacity=".55"/>
+  <text x="260" y="254" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="900" fill="white" letter-spacing="-2.5">burro.cl</text>
+  <circle cx="260" cy="302" r="20" fill="#241a14"/>
+  <text x="260" y="314" text-anchor="middle" font-family="Arial" font-size="30" font-weight="900" fill="#fff8ef">★</text>
+  <circle cx="122" cy="280" r="13" fill="#e45b2d"/><circle cx="398" cy="280" r="13" fill="#e45b2d"/>
+</g>
+</svg>
