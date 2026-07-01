@@ -390,8 +390,8 @@ export default function ProfessionalApplicationPage() {
                         </div>
                         <div className="mt-4 flex flex-wrap gap-2">
                           {group.items.map((example) => (
-                            <label key={`${group.title}-${example}`} className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm font-black text-[#27235F] ring-1 ring-neutral-200 transition has-[:checked]:bg-[#3F35F2] has-[:checked]:text-white has-[:checked]:ring-[#3F35F2] hover:ring-[#3F35F2]">
-                              <input type="checkbox" className="sr-only" />
+                            <label key={`${group.title}-${example}`} className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-black text-[#27235F] ring-1 ring-neutral-200 transition has-[:checked]:bg-[#3F35F2] has-[:checked]:text-white has-[:checked]:ring-[#3F35F2] hover:ring-[#3F35F2]">
+                              <input type="checkbox" className="h-3.5 w-3.5 accent-[#3F35F2]" />
                               {example}
                             </label>
                           ))}
