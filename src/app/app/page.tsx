@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -42,6 +43,14 @@ const reviewItems = [
   "Cordialidad y comunicación",
 ];
 
+const bottomNav = [
+  { label: "Hoy", icon: "⌂", active: true },
+  { label: "Calendario", icon: "□", active: false },
+  { label: "Anuncios", icon: "▢", active: false },
+  { label: "Mensajes", icon: "▱", active: false },
+  { label: "Menú", icon: "☰", active: false },
+];
+
 export default function AppPrototypePage() {
   return (
     <main className="min-h-screen bg-[#f7f7f7] text-[#14123D]">
@@ -70,51 +79,52 @@ export default function AppPrototypePage() {
           </div>
 
           <div className="mx-auto w-full max-w-sm rounded-[3rem] bg-[#14123D] p-4 shadow-2xl ring-8 ring-neutral-200">
-            <div className="overflow-hidden rounded-[2.4rem] bg-white">
-              <div className="bg-[#14123D] px-5 py-5 text-white">
-                <div className="mx-auto mb-4 h-1.5 w-24 rounded-full bg-white/25" />
-                <p className="text-xs font-black uppercase tracking-[0.2em] text-[#C8C5FF]">burro.cl app</p>
-                <h2 className="mt-2 text-2xl font-black">Reserva activa</h2>
+            <div className="flex min-h-[720px] flex-col overflow-hidden rounded-[2.4rem] bg-white">
+              <div className="px-5 pb-4 pt-5">
+                <div className="mx-auto mb-5 h-1.5 w-24 rounded-full bg-neutral-200" />
+                <div className="flex gap-3">
+                  <button className="rounded-full bg-[#14123D] px-9 py-4 text-sm font-black text-white shadow-xl shadow-[#14123D]/20">
+                    Hoy
+                  </button>
+                  <button className="rounded-full bg-[#F4F3FF] px-7 py-4 text-sm font-black text-[#C8C5FF]">
+                    Reservaciones programadas
+                  </button>
+                </div>
               </div>
-              <div className="space-y-4 p-5">
-                <div className="rounded-3xl bg-[#F1EFFF] p-4">
-                  <p className="text-xs font-black uppercase tracking-[0.16em] text-[#3F35F2]">Maestro asignado</p>
-                  <p className="mt-1 text-xl font-black">Mantención general</p>
-                  <p className="mt-1 text-sm text-[#5E5A8F]">Ñuñoa · Hoy 15:00</p>
+
+              <div className="relative flex flex-1 items-center justify-center px-8">
+                <Link
+                  href="/"
+                  aria-label="Ir a burro.cl"
+                  className="group flex flex-col items-center opacity-25 transition hover:opacity-55"
+                >
+                  <Image
+                    src="/brand/burro-icon.svg"
+                    alt="burro.cl"
+                    width={132}
+                    height={132}
+                    className="h-28 w-28 grayscale"
+                    priority
+                  />
+                  <span className="-mt-2 text-sm font-black tracking-tight text-[#14123D]">burro.cl</span>
+                </Link>
+              </div>
+
+              <div className="border-t border-neutral-100 bg-white px-4 pb-5 pt-3">
+                <div className="grid grid-cols-5 gap-1">
+                  {bottomNav.map((item) => (
+                    <button
+                      key={item.label}
+                      className={`flex flex-col items-center gap-1 rounded-2xl py-2 text-[11px] font-bold ${
+                        item.active ? "text-[#3F35F2]" : "text-neutral-400"
+                      }`}
+                    >
+                      <span className="text-2xl leading-none">{item.icon}</span>
+                      <span>{item.label}</span>
+                    </button>
+                  ))}
                 </div>
-                <div className="rounded-3xl border border-[#E7E5FF] p-4">
-                  <p className="font-black">Chat antes del match</p>
-                  <div className="mt-4 space-y-3 text-sm font-bold text-[#27235F]">
-                    <p className="rounded-2xl bg-[#F2F1FF] p-3">Cliente: ¿Puedes revisar si haces enchufes y lámparas?</p>
-                    <p className="rounded-2xl bg-[#14123D] p-3 text-white">Maestro: Sí, hago enchufes, interruptores y lámparas.</p>
-                    <p className="rounded-2xl bg-[#FFF4CC] p-3 text-[#4A3A00]">⚠️ Tarjeta amarilla: no se permite pedir ni enviar teléfonos antes del match.</p>
-                    <p className="rounded-2xl bg-[#F1EFFF] p-3 text-[#3F35F2]">🎙️ Audio recibido → convertido a texto antes de enviarse.</p>
-                  </div>
-                </div>
-                <div className="rounded-3xl border border-[#E7E5FF] p-4">
-                  <p className="font-black">Estado del servicio</p>
-                  <div className="mt-4 space-y-3 text-sm font-bold text-[#27235F]">
-                    <p>✓ Match confirmado</p>
-                    <p>✓ Tarjeta autorizada</p>
-                    <p>⌛ Esperando llegada del maestro</p>
-                    <p>□ Doble confirmación cliente/maestro</p>
-                    <p>□ Captura de pago</p>
-                  </div>
-                </div>
-                <div className="rounded-3xl bg-[#FFF8DD] p-4 text-[#4A3A00] ring-1 ring-[#FFE68A]">
-                  <p className="text-sm font-black">⚠️ Chat protegido</p>
-                  <p className="mt-2 text-xs leading-5">No se permiten teléfonos, correos ni pagos por fuera. Los audios se convierten a texto antes de enviarse.</p>
-                </div>
-                <button className="w-full rounded-full bg-[#14123D] px-5 py-4 font-black text-white">
-                  Confirmar llegada
-                </button>
-                <div className="rounded-3xl bg-[#F2F1FF] p-4">
-                  <p className="text-sm font-black">Evaluación posterior</p>
-                  <p className="mt-2 text-xs leading-5 text-[#5E5A8F]">Puntualidad · Calidad · Limpieza · Cordialidad · Cliente colaborativo</p>
-                </div>
-                <p className="text-center text-xs leading-5 text-[#7773A8]">
-                  La confirmación también podrá enviarse por WhatsApp automático para cliente y prestador.
-                </p>
+                <div className="mx-auto mt-4 h-1.5 w-28 rounded-full bg-neutral-950" />
               </div>
             </div>
           </div>
