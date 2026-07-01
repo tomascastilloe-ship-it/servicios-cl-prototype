@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -240,6 +243,16 @@ function FieldLabel({ children }: { children: React.ReactNode }) {
 }
 
 export default function ProfessionalApplicationPage() {
+  const [selectedDetails, setSelectedDetails] = useState<string[]>([]);
+
+  function toggleDetail(value: string) {
+    setSelectedDetails((current) =>
+      current.includes(value)
+        ? current.filter((item) => item !== value)
+        : [...current, value]
+    );
+  }
+
   return (
     <main className="min-h-screen bg-[#f7f7f7] text-[#14123D]">
       <SiteHeader />
@@ -390,15 +403,30 @@ export default function ProfessionalApplicationPage() {
                         </div>
                         <div className="mt-4 flex flex-wrap gap-2">
                           {group.items.map((example) => (
-                            <label key={`${group.title}-${example}`} className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-black text-[#27235F] ring-1 ring-neutral-200 transition has-[:checked]:bg-[#3F35F2] has-[:checked]:text-white has-[:checked]:ring-[#3F35F2] hover:ring-[#3F35F2]">
-                              <input type="checkbox" className="h-3.5 w-3.5 accent-[#3F35F2]" />
+                            <button
+                              key={`${group.title}-${example}`}
+                              type="button"
+                              onClick={() => toggleDetail(`${group.title}: ${example}`)}
+                              className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-black ring-1 transition ${
+                                selectedDetails.includes(`${group.title}: ${example}`)
+                                  ? "bg-[#3F35F2] text-white ring-[#3F35F2]"
+                                  : "bg-white text-[#27235F] ring-neutral-200 hover:ring-[#3F35F2]"
+                              }`}
+                            >
+                              <span className="text-xs">{selectedDetails.includes(`${group.title}: ${example}`) ? "✓" : "+"}</span>
                               {example}
-                            </label>
+                            </button>
                           ))}
                         </div>
                       </section>
                     ))}
                   </div>
+                  {selectedDetails.length > 0 ? (
+                    <div className="mt-5 rounded-[1.3rem] bg-[#F1EFFF] p-4 text-sm font-bold leading-6 text-[#27235F]">
+                      <p className="font-black text-[#14123D]">Seleccionado hasta ahora:</p>
+                      <p className="mt-1">{selectedDetails.join(" · ")}</p>
+                    </div>
+                  ) : null}
                   <div className="mt-5 space-y-2">
                     <FieldLabel>Detalle exacto de trabajos que realiza</FieldLabel>
                     <textarea className="min-h-28 w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: cambio enchufes macho/hembra, reviso diferenciales y tablero; o paseo perros chicos/medianos, recojo caca y envío foto del paseo." />
