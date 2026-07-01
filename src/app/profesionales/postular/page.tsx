@@ -77,21 +77,162 @@ const videoScript = [
   "Cierro diciendo: trabajo con burro.cl, coordino por la plataforma y me gusta dejar claro el valor antes de comenzar.",
 ];
 
-const concreteExamples = [
-  "Cambio de enchufes",
-  "Revisión de tablero",
-  "Instalación de lámparas",
-  "Filtraciones de baño",
-  "Llave que gotea",
-  "WC corriendo",
-  "Instalar repisas",
-  "Soporte de TV",
-  "Cortinas",
-  "Arreglo de puertas",
-  "Bisagras",
-  "Pintura menor",
-  "Sellos de tina/ducha",
-  "Preparar depto para arriendo",
+const serviceDetailGroups = [
+  {
+    title: "Electricidad",
+    helper: "Trabajos eléctricos chicos y medianos para departamentos.",
+    items: [
+      "Cambio de enchufes",
+      "Enchufes macho/hembra",
+      "Interruptores",
+      "Automáticos",
+      "Diferenciales",
+      "Revisión de tablero",
+      "Instalación de lámparas",
+      "Cambio de soquetes",
+      "Citófono/timbre",
+      "Cortocircuitos simples",
+      "Luces LED",
+      "Canaletas eléctricas",
+    ],
+  },
+  {
+    title: "Gasfitería",
+    helper: "Arreglos de agua, baño y cocina.",
+    items: [
+      "Llave que gotea",
+      "WC corriendo",
+      "Cambio de sifón",
+      "Destape simple",
+      "Filtraciones de baño",
+      "Filtraciones bajo lavaplatos",
+      "Cambio de flexibles",
+      "Cambio de grifería",
+      "Sellos de tina/ducha",
+      "Revisión de calefón",
+      "Presión de agua",
+      "Instalación lavadora",
+    ],
+  },
+  {
+    title: "Maestro / mantención",
+    helper: "Instalaciones y arreglos generales dentro del departamento.",
+    items: [
+      "Instalar repisas",
+      "Soporte de TV",
+      "Cortinas",
+      "Persianas",
+      "Armado de muebles",
+      "Arreglo de puertas",
+      "Bisagras",
+      "Chapitas/manillas",
+      "Silicona y sellos",
+      "Pintura menor",
+      "Tapar hoyos",
+      "Preparar depto para arriendo",
+    ],
+  },
+  {
+    title: "Aseo profundo",
+    helper: "Limpieza para vivir, entregar o arrendar un departamento.",
+    items: [
+      "Aseo cocina",
+      "Aseo baños",
+      "Limpieza post arriendo",
+      "Limpieza post mudanza",
+      "Limpieza de grasa",
+      "Horno/campana",
+      "Refrigerador",
+      "Closets",
+      "Balcón/terraza",
+      "Pisos flotantes",
+      "Junturas de cerámica",
+      "Desinfección general",
+    ],
+  },
+  {
+    title: "Vidrios",
+    helper: "Limpieza de ventanas, espejos y mamparas.",
+    items: [
+      "Ventanas interiores",
+      "Ventanas exteriores accesibles",
+      "Ventanas de balcón",
+      "Mamparas de baño",
+      "Espejos",
+      "Rieles de ventana",
+      "Marcos de aluminio",
+      "Mallas de seguridad",
+      "Ventanal grande",
+      "Vidrios en altura baja",
+    ],
+  },
+  {
+    title: "Alfombras / colchones / tapices",
+    helper: "Lavado y sanitizado de textiles del hogar.",
+    items: [
+      "Colchón 1 plaza",
+      "Colchón 2 plazas",
+      "King / super king",
+      "Sofá 2 cuerpos",
+      "Sofá 3 cuerpos",
+      "Sitiales",
+      "Alfombra chica",
+      "Alfombra grande",
+      "Manchas",
+      "Olores",
+      "Ácaros",
+      "Secado rápido",
+    ],
+  },
+  {
+    title: "Paseo de perros",
+    helper: "Opciones claras para mascotas chicas, medianas y grandes.",
+    items: [
+      "Perro chico",
+      "Perro mediano",
+      "Perro grande",
+      "Paseo solo",
+      "Paseo compartido",
+      "30 minutos",
+      "60 minutos",
+      "Recojo caca",
+      "Agua y cuidado básico",
+      "Foto/reporte del paseo",
+      "Perros nerviosos",
+      "Paseo recurrente",
+    ],
+  },
+  {
+    title: "Lavado de autos",
+    helper: "Servicios móviles para estacionamientos de edificios.",
+    items: [
+      "Lavado exterior",
+      "Aspirado interior",
+      "Limpieza de tablero",
+      "Vidrios interiores",
+      "Maletero",
+      "Auto chico",
+      "SUV/camioneta",
+      "Lavado sin agua",
+      "Encerado simple",
+      "Eliminación de olores",
+      "Limpieza de tapiz",
+    ],
+  },
+  {
+    title: "Cerrajería",
+    helper: "Aperturas y cambios simples de seguridad.",
+    items: [
+      "Cambio de chapa",
+      "Apertura simple",
+      "Copia/ajuste de llave",
+      "Cerradura digital",
+      "Seguro adicional",
+      "Puerta trabada",
+      "Manilla suelta",
+      "Cilindro",
+    ],
+  },
 ];
 
 function FieldLabel({ children }: { children: React.ReactNode }) {
@@ -231,20 +372,36 @@ export default function ProfessionalApplicationPage() {
                   ))}
                 </div>
                 <div className="mt-6 rounded-[1.7rem] bg-neutral-50 p-5 ring-1 ring-neutral-200">
-                  <p className="font-black">Ejemplos para ayudar al maestro a explicar lo que hace</p>
+                  <p className="font-black">Globos específicos por rubro</p>
                   <p className="mt-2 text-sm leading-6 text-[#5E5A8F]">
-                    Estos globitos sirven para que la persona no tenga que inventar una descripción complicada. Puede elegir los que correspondan y después escribir otros.
+                    Cada rubro tiene sus propios globos. La persona marca lo que realmente hace y después puede escribir detalles que no aparezcan.
                   </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {concreteExamples.map((example) => (
-                      <span key={example} className="rounded-full bg-white px-4 py-2 text-sm font-black text-[#27235F] ring-1 ring-neutral-200">
-                        {example}
-                      </span>
+                  <div className="mt-5 space-y-5">
+                    {serviceDetailGroups.map((group) => (
+                      <section key={group.title} className="rounded-[1.4rem] bg-white p-4 ring-1 ring-[#E7E5FF]">
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+                          <div>
+                            <h4 className="text-lg font-black text-[#14123D]">{group.title}</h4>
+                            <p className="text-sm leading-6 text-[#5E5A8F]">{group.helper}</p>
+                          </div>
+                          <span className="text-xs font-black uppercase tracking-[0.16em] text-[#3F35F2]">
+                            {group.items.length} opciones
+                          </span>
+                        </div>
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {group.items.map((example) => (
+                            <label key={`${group.title}-${example}`} className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm font-black text-[#27235F] ring-1 ring-neutral-200 transition has-[:checked]:bg-[#3F35F2] has-[:checked]:text-white has-[:checked]:ring-[#3F35F2] hover:ring-[#3F35F2]">
+                              <input type="checkbox" className="sr-only" />
+                              {example}
+                            </label>
+                          ))}
+                        </div>
+                      </section>
                     ))}
                   </div>
                   <div className="mt-5 space-y-2">
                     <FieldLabel>Detalle exacto de trabajos que realiza</FieldLabel>
-                    <textarea className="min-h-28 w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: cambio enchufes, reviso luces, instalo lámparas, arreglo filtraciones simples, cambio sifones, instalo repisas, reparo puertas, hago pintura menor." />
+                    <textarea className="min-h-28 w-full rounded-2xl border border-[#E7E5FF] bg-white px-4 py-3 outline-none transition focus:border-neutral-950" placeholder="Ej: cambio enchufes macho/hembra, reviso diferenciales y tablero; o paseo perros chicos/medianos, recojo caca y envío foto del paseo." />
                   </div>
                 </div>
               </section>
